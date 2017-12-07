@@ -66,8 +66,9 @@
         }
 
         .usluga-check{
-            font-size: 18px;
-            padding: 40px; 
+            font-size: 17px;
+           height: 150px;
+            width: 150px;
         }
 
         .usluga-price{
@@ -94,9 +95,7 @@
                         <button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#myModal">
                         Подключить
                         </button>
-                <!-- Modal -->
-                       
-                       
+                
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -113,19 +112,7 @@
                                       <img class="spdmtr center-block img-circle" src="../images/speed30.png" alt="30 Мбит/с">
                                   </div>
                               </div>
-                             <!-- <div class="row">
-                                  <div class="col-md-10">
-                                      <h3>В него также входят:</h3>
-                                      <h4>
-                                          <ul>
-                                                <li>Роутер + 100 руб/мин</li>
-                                                <li>ТВ + от 99 руб/мин</li>
-                                                <li>PLC + от 99 руб/мин</li>
-                                                <li>Антивирус + от 89 руб/мин</li>
-                                          </ul>
-                                      </h4>
-                                  </div>
-                              </div> -->
+
                               <hr>
                               <form action="../scripts/tariff.php" method="post">
                                   <div class="row">
@@ -145,52 +132,27 @@
                                          </div>
                                      </div>
                                   </div>
-                              
+
                                   <div class="row">
                                       <h2 class="text-center">Также вы можете подключить дополнительные услуги:</h2>
-                                      <div class="col-md-12">
-                                      <div class="row center-block ">
-                                      <div class="btn-group" data-toggle="buttons">
-                                          <div class="col-md-4">
-                                              <label class="btn btn-success slt-btn usluga-check sltbg">
-                                                <input hidden  type="checkbox" name="usluga1"> Роутер
-                                                <br>
-                                                100 руб
-                                              </label>
+                                      <div class="btn-group center-block" data-toggle="buttons">
+                                          <div class="col-md-4 center-block">
+                                              <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 рублей.
+                                                    <input hidden="hidden"  type="checkbox" name="usluga1"> 
+                                              </button>
                                           </div>
-                                          <div class="col-md-4">
-                                              <label class="btn btn-success slt-btn usluga-check sltbg">
-                                                <input hidden  type="checkbox" name="usluga2">Антивирус 
-                                                <br>
-                                                89 руб
-                                              </label>
+                                          <div class="col-md-4 ">
+                                              <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 рублей.
+                                                  <input hidden="hidden"  type="checkbox" name="usluga2"> 
+                                              </button>
                                           </div>
-                                          <div class="col-md-4 text-center">
-                                              <label class="btn btn-success slt-btn usluga-check sltbg">
-                                                <input hidden="hidden"  type="checkbox" name="usluga3"> PLC
-                                                <br>
-                                                99 руб
-                                              </label>
+                                          <div class="col-md-4 center-block">
+                                                <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 рублей.
+                                                    <input hidden="hidden"  type="checkbox" name="usluga3"> 
+                                                </button>
                                           </div>
                                       </div>
-                                      </div>
-                                          <!--<label class="btn btn-success slt-btn usluga-check sltbg">
-                                                <input type="checkbox"> Роутер
-                                                <br>
-                                                100 руб
-                                          </label>
-                                          <label class="btn btn-success slt-btn usluga-check sltbg">
-                                                <input  type="checkbox"> Антивирус
-                                                <br>
-                                                89 руб
-                                          </label>
-                                          <label class="btn btn-success slt-btn usluga-check sltbg">
-                                                <input  type="checkbox"> PLC
-                                                <br>
-                                                99 руб
-                                          </label>-->
                                       
-                                      </div>
                                   </div>
                                   <hr>
                                   <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
