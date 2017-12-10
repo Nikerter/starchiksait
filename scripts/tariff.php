@@ -12,6 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 </head>
 <body>
+   <style>
+       body{
+           background: rgb(5, 165, 167);
+background: -moz-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+background: -webkit-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+background: -o-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+background: -ms-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+       }
+    </style>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -30,15 +40,15 @@
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Интернет <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="active"><a href="tariff.html">Подбор тарифного плана</a></li>
+                <li class="active"><a href="../pages/tariff.html">Подбор тарифного плана</a></li>
                 <li class="divider"></li>
-                <li><a href="services.html">Дополнительные услуги</a></li>
+                <li><a href="../pages/services.html">Дополнительные услуги</a></li>
               </ul>
             </li>
-            <li><a href="tv.html">Телевидение</a></li>
-            <li><a href="business.html">Бизнес</a></li>
-            <li><a href="payment.html">Оплата</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="../pages/tv.html">Телевидение</a></li>
+            <li><a href="../pages/business.html">Бизнес</a></li>
+            <li><a href="../pages/payment.html">Оплата</a></li>
+            <li><a href="../pages/contacts.html">Контакты</a></li>
             <li><a href="https://b.butovonet.ru/webroom/" target="_blank">Личный кабинет</a></li>
           </ul>       
         </div><!-- /.navbar-collapse -->
@@ -96,20 +106,6 @@ if ($usluga3 == "on") {
 }
 
 ?>
-
-<!--<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8 text-center">
-        <h1>К сожалению вы зашли на эту страницу, пердварительно не выбрав тарифный план</h1>
-        <br>
-        <h2>Сначала выберите тарифный план</h2>
-        <br>
-        <a href="../pages/tariff.html">
-            <button class="btn btn-primary btn-lg sltbg">Выбрать тариф</button>
-        </a>
-    </div>        
-</div>-->
-
 
 </body>
 </html>
