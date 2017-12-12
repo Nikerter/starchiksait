@@ -12,16 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 </head>
 <body>
-   <style>
-       body{
-           background: rgb(5, 165, 167);
-background: -moz-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: -webkit-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: -o-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: -ms-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-       }
-    </style>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -54,12 +44,88 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    
+    
+    
 <?php 
 
-//var_dump($_POST);
+function cas($tariffcost)
+{
+  switch ($tariffcost) {
+  case '300':
+    $hc = 0;
+    break;
 
-if ((isset($_POST['tel'])) || (isset($_POST['adres']))) {
-	echo "<h1>Спасибо за предоставленные данные!</h1>";
+  case '400':
+    $hc = 0;
+    break;
+
+  case '450':
+    $hc = 0;
+    break;
+
+  case '550':
+    $hc = 0;
+    break;
+
+  case '650':
+    $hc = 0;
+    break;
+  
+  default:
+    $hc = 1;
+    break;
+}
+
+return $hc;
+}
+
+var_dump($_POST);
+
+cas($_POST['tariffcost']);
+
+
+$tel = $_POST['tel'];
+$adres = $_POST['adres'];
+$mail = $_POST['mail'];
+
+
+echo "<br>Телефон - {$tel}";
+echo "<br>Адрес - {$adres}";
+
+if ($mail == "") {
+  echo "<br> Почта не вписана";
+} else {
+  echo "<br> Почта - {$mail}";
+}
+
+
+if ($_POST['usluga1'] == "on") {
+  //echo "<br> Запрошена услуга 1 <br>";
+  $uslugcost1 = $_POST['uslugcost1'];
+  //echo $uslugcost1;
+  $sumusl = $sumusl + $uslugcost1;
+}
+
+if ($_POST['usluga2'] == "on") {
+  //echo "<br> Запрошена услуга 2 <br>";
+  $uslugcost2 = $_POST['uslugcost2'];
+  //echo $uslugcost2;
+  $sumusl = $sumusl + $uslugcost2;
+}
+
+if ($_POST['usluga3'] == "on") {
+  //echo "<br> Запрошена услуга 3 ";
+  $uslugcost3 = $_POST['uslugcost3'];
+  //echo $uslugcost3;
+  $sumusl = $sumusl + $uslugcost3;
+}
+
+
+if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffcost'])) && ($hc == 0)) {
+	echo "<div class='row'>
+        <h2 class='text-center'>Сумма подключенных вами услуг: ", $_POST['tariffcost'] + $sumusl, "</h2>'
+        </div>";
 } else {
 	echo "<div class='row'>
     <div class='col-md-2'></div>
@@ -76,34 +142,7 @@ if ((isset($_POST['tel'])) || (isset($_POST['adres']))) {
 }
 
 
-$tel = $_POST['tel'];
-$adres = $_POST['adres'];
-$mail = $_POST['mail'];
 
-$usluga1 = $_POST['usluga1'];
-$usluga2 = $_POST['usluga2'];
-$usluga3 = $_POST['usluga3'];
-
-echo "<br>Телефон - {$tel}";
-echo "<br>Адрес - {$adres}";
-
-if ($mail == "") {
-	echo "<br> Почта не вписана";
-} else {
-	echo "<br> Почта - {$mail}";
-}
-
-if ($usluga1 == "on") {
-	echo "<br> Запрошена услуга 1";
-}
-
-if ($usluga2 == "on") {
-	echo "<br> Запрошена услуга 2";
-}
-
-if ($usluga3 == "on") {
-	echo "<br> Запрошена услуга 3";
-}
 
 ?>
 
