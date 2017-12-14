@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 
 .sltbg{
             background: #30BAA8; 

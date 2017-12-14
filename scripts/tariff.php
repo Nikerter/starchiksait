@@ -49,83 +49,121 @@
     
 <?php 
 
-function cas($tariffcost)
-{
-  switch ($tariffcost) {
-  case '300':
-    $hc = 0;
-    break;
+//function cas($tariffcost)
+//{
+    switch ($_POST['tariffcost']/*$tariffcost*/) {
+    case '300':
+      $hc = 0;
+      $tariffname = '30 Мбит/с';
+      break;
 
-  case '400':
-    $hc = 0;
-    break;
+    case '400':
+      $hc = 0;
+      $tariff = 400;
+      break;
 
-  case '450':
-    $hc = 0;
-    break;
+    case '450':
+      $hc = 0;
+      $tariff = 450;
+      break;
 
-  case '550':
-    $hc = 0;
-    break;
+    case '550':
+      $hc = 0;
+      $tariff = 550;
+      break;
 
-  case '650':
-    $hc = 0;
-    break;
-  
-  default:
-    $hc = 1;
-    break;
-}
+    case '650':
+      $hc = 0;
+      $tariff = 650;
+      break;
+    
+    default:
+      $hc = 1;
+      break;
+  }
 
-return $hc;
-}
-
-var_dump($_POST);
-
-cas($_POST['tariffcost']);
-
-
-$tel = $_POST['tel'];
-$adres = $_POST['adres'];
-$mail = $_POST['mail'];
-
-
-echo "<br>Телефон - {$tel}";
-echo "<br>Адрес - {$adres}";
-
-if ($mail == "") {
-  echo "<br> Почта не вписана";
-} else {
-  echo "<br> Почта - {$mail}";
-}
-
+//return $hc;
+//}
 
 if ($_POST['usluga1'] == "on") {
-  //echo "<br> Запрошена услуга 1 <br>";
   $uslugcost1 = $_POST['uslugcost1'];
-  //echo $uslugcost1;
   $sumusl = $sumusl + $uslugcost1;
+  $usarr[] = $_POST['usluganame1'];
 }
 
 if ($_POST['usluga2'] == "on") {
-  //echo "<br> Запрошена услуга 2 <br>";
   $uslugcost2 = $_POST['uslugcost2'];
-  //echo $uslugcost2;
   $sumusl = $sumusl + $uslugcost2;
+  $usarr[] = $_POST['usluganame2'];
 }
 
 if ($_POST['usluga3'] == "on") {
-  //echo "<br> Запрошена услуга 3 ";
   $uslugcost3 = $_POST['uslugcost3'];
-  //echo $uslugcost3;
   $sumusl = $sumusl + $uslugcost3;
+  $usarr[] = $_POST['usluganame3'];
+}
+
+function cost ($tariffcost, $sumusl) {
+  echo $tariffcost + $sumusl;
 }
 
 
+//var_dump($_POST);
+
+// echo $_POST['usluganame1'];
+// echo $_POST['usluganame2'];
+// echo $_POST['usluganame3'];
+
+//cas($_POST['tariffcost']);
+
+$tariffcost = $_POST['tariffcost'];
+
+
+//$mail = $_POST['mail'];
+
+
+
+
+if ($_POST['mail'] == "") {
+  $mail = "Почта не указана";
+  //echo "<br> Почта не вписана";
+} else {
+  $mail = $_POST['mail'];
+  //echo "<br> Почта - {$_POST['mail']}";
+};
+
+// foreach ($usarr as $value) {
+//   echo "<br>Услуги подключены: {$value}";
+// }
+
 if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffcost'])) && ($hc == 0)) {
-	echo "<div class='row'>
-        <h2 class='text-center'>Сумма подключенных вами услуг: ", $_POST['tariffcost'] + $sumusl, "</h2>'
+	echo "<div class='row text-center'>
+      <h3>Ваш телефон: <strong>{$_POST['tel']}</strong></h3>
+      <h3>Ваш адрес: <strong>{$_POST['adres']}</strong></h3>
+      <h3>Ваша эл. почта: <strong>{$mail}</strong></h3>
+      <hr>
+      <h3>Тариф: <strong>{$tariffname}</strong></h3>";
+
+  echo "<h3>Доп услуги: <strong>";
+foreach ($usarr as $value) {
+  echo " - ", $value;
+}
+  echo "</strong></h3>
+    </div>
+    <hr>";
+
+  echo "<div class='row'>
+        <h2 class='text-center'>Общая сумма заявки: <strong>", cost($_POST['tariffcost'], $sumusl) , "</strong> рублей</h2>'
         </div>";
+  echo "<div class='row'>
+      <div class='col-md-4'></div>
+      <div class='col-md-2'>
+        <div class='btn btn-lg btn-success center-block'>Все верно</div>
+      </div>
+      <div class='col-md-2'>
+        <div class='btn btn-lg btn-danger center-block'>Неверно</div>
+      </div>
+    </div>";
 } else {
 	echo "<div class='row'>
     <div class='col-md-2'></div>
