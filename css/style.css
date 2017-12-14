@@ -1,48 +1,4 @@
 
-.form-white .md-form label {
-    color: #fff;
-}
-.form-white input[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #fff;
-    -webkit-box-shadow: 0 1px 0 0 #fff;
-    box-shadow: 0 1px 0 0 #fff;
-}
-.form-white input[type=text]:focus:not([readonly]) + label {
-    color: #fff;
-}
-.form-white input[type=password]:focus:not([readonly]) {
-    border-bottom: 1px solid #fff;
-    -webkit-box-shadow: 0 1px 0 0 #fff;
-    box-shadow: 0 1px 0 0 #fff;
-}
-.form-white input[type=password]:focus:not([readonly]) + label {
-    color: #fff;
-}
-.form-white input[type=password], .form-white input[type=text] {
-    border-bottom: 1px solid #fff;
-}
-.form-white .form-control:focus {
-    color: #fff;
-}
-.form-white .form-control {
-    color: #fff;
-}
-.form-white textarea.md-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 1px 0 0 #fff;
-    color: #fff;
-}
-.form-white textarea.md-textarea  {
-    border-bottom: 1px solid #fff;
-    color: #fff;
-}
-.form-white textarea.md-textarea:focus:not([readonly])+label {
-    color: #fff;
-}
-.ripe-malinka-gradient {
-    background-image: linear-gradient(120deg, #30baa8 0%, #62ba98 100%);
-}
-
 .sltbg{
             background: #30BAA8; 
             border: 0px solid #30BAA8;
