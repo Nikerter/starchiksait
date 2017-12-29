@@ -89,18 +89,24 @@ if ($_POST['usluga1'] == "on") {
   $uslugcost1 = $_POST['uslugcost1'];
   $sumusl = $sumusl + $uslugcost1;
   $usarr[] = $_POST['usluganame1'];
+  $usarr[$_POST['usluganame1']] = $_POST['uslugcost1'];
+  $ust1 = 1;
 }
 
 if ($_POST['usluga2'] == "on") {
   $uslugcost2 = $_POST['uslugcost2'];
   $sumusl = $sumusl + $uslugcost2;
   $usarr[] = $_POST['usluganame2'];
+  $usarr[$_POST['usluganame2']] = $_POST['uslugcost2'];
+  $ust2 = 1;
 }
 
 if ($_POST['usluga3'] == "on") {
   $uslugcost3 = $_POST['uslugcost3'];
   $sumusl = $sumusl + $uslugcost3;
-  $usarr[] = $_POST['usluganame3'];
+  $usarr[] = $_POST['usluganame2'];
+  $usarr[$_POST['usluganame2']] = $_POST['uslugcost2'];
+  $ust3 = 1;
 }
 
 function cost ($tariffcost, $sumusl) {
@@ -137,17 +143,36 @@ if ($_POST['mail'] == "") {
 // }
 
 if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffcost'])) && ($hc == 0)) {
-	echo "<div class='row text-center'>
+    echo "<form action='confirm.php' method='post'>";
+    echo "<div class='row text-center'>
       <h3>Ваш телефон: <strong>{$_POST['tel']}</strong></h3>
+      <input hidden='hidden' type='text' name='tel' id='tel' value='{$_POST['tel']}'>
       <h3>Ваш адрес: <strong>{$_POST['adres']}</strong></h3>
+      <input hidden='hidden' type='text' name='adres' id='adres' value='{$_POST['adres']}'>
       <h3>Ваша эл. почта: <strong>{$mail}</strong></h3>
+      <input hidden='hidden' type='text' name='mail' id='mail' value='{$_POST['mail']}'>
       <hr>
-      <h3>Тариф: <strong>{$tariffname}</strong></h3>";
+      <h3>Тариф: <strong>{$tariffname}</strong></h3>
+      <input hidden='hidden' type='text' name='tariffname' id='tariffname' value='{$tariffname}'>
+      ";
+
 
   echo "<h3>Доп услуги: <strong>";
-foreach ($usarr as $value) {
-  echo " - ", $value;
-}
+  if (($ust1 !== 1) && ($ust2 !== 1) && ($ust3 !== 1)) {
+    echo "Дополнительные услуги не выбраны";
+  } else {
+          foreach ($usarr as  $value) {
+            echo " - ", $value;
+           
+            // echo "<pre>";
+            // echo print_r($usarr2);
+            // echo "</pre>";
+            //echo "<input type='text' name='{$value}' id='{$value}' value='{$value}'>";
+         }
+       echo "<pre>";
+       echo print_r($usarr);
+       echo "</pre>";
+    }
   echo "</strong></h3>
     </div>
     <hr>";
@@ -158,12 +183,13 @@ foreach ($usarr as $value) {
   echo "<div class='row'>
       <div class='col-md-4'></div>
       <div class='col-md-2'>
-        <div class='btn btn-lg btn-success center-block'>Все верно</div>
+        <input class='btn btn-lg btn-success center-block' type='submit' value='Подтвердить'>
       </div>
       <div class='col-md-2'>
         <div class='btn btn-lg btn-danger center-block'>Неверно</div>
       </div>
     </div>";
+  echo "</form>";
 } else {
 	echo "<div class='row'>
     <div class='col-md-2'></div>
