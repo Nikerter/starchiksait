@@ -1,0 +1,52 @@
+/* Form Style */
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    border: none;
+}
+
+#accordion .panel-title a{
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #0C0119;
+    transition: all 0.5s ease 0s;
+}
+
+#accordion .panel-title a:hover{
+    background: rgba(12, 1, 25, 0.8);
+}
+
+#accordion .panel-body{
+    font-size: 14px;
+    color: #fff;
+    background: #29b0a0;
+    padding: 15px 20px;
+    line-height: 25px;
+    border: none;
+    position: relative;
+}
+
+#accordion .panel-body:after{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #29b0a0;
+}
