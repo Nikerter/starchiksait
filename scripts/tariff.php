@@ -104,8 +104,8 @@ if ($_POST['usluga2'] == "on") {
 if ($_POST['usluga3'] == "on") {
   $uslugcost3 = $_POST['uslugcost3'];
   $sumusl = $sumusl + $uslugcost3;
-  $usarr[] = $_POST['usluganame2'];
-  $usarr[$_POST['usluganame2']] = $_POST['uslugcost2'];
+  $usarr[] = $_POST['usluganame3'];
+  $usarr[$_POST['usluganame3']] = $_POST['uslugcost3'];
   $ust3 = 1;
 }
 
@@ -152,26 +152,39 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
       <h3>Ваша эл. почта: <strong>{$mail}</strong></h3>
       <input hidden='hidden' type='text' name='mail' id='mail' value='{$_POST['mail']}'>
       <hr>
-      <h3>Тариф: <strong>{$tariffname}</strong></h3>
+      <h3>Тариф: <strong>{$tariffname} - {$tariffcost} рублей.</strong></h3>
       <input hidden='hidden' type='text' name='tariffname' id='tariffname' value='{$tariffname}'>
       ";
 
 
   echo "<h3>Доп услуги: <strong>";
+  //$key = 0;
   if (($ust1 !== 1) && ($ust2 !== 1) && ($ust3 !== 1)) {
     echo "Дополнительные услуги не выбраны";
   } else {
-          foreach ($usarr as  $value) {
+          foreach ($usarr as $key => $value) {
+            //++$key;
             echo " - ", $value;
-           
+            //echo "<input  type='text' name='usluga{$key}' id='usluga{$key}' value='{$value}'>";
             // echo "<pre>";
             // echo print_r($usarr2);
             // echo "</pre>";
             //echo "<input type='text' name='{$value}' id='{$value}' value='{$value}'>";
          }
-       echo "<pre>";
-       echo print_r($usarr);
-       echo "</pre>";
+         if ($_POST['usluga1'] == "on") {
+             echo "<input hidden='hidden' type='text' name='usluga1' id='usluga1' value='{$_POST['usluganame1']}'>";
+            }
+
+            if ($_POST['usluga2'] == "on") {
+             echo "<input hidden='hidden' type='text' name='usluga2' id='usluga2' value='{$_POST['usluganame2']}'>";
+            }
+
+            if ($_POST['usluga3'] == "on") {
+             echo "<input hidden='hidden' type='text' name='usluga3' id='usluga3' value='{$_POST['usluganame3']}'>";
+            }
+       // echo "<pre>";
+       // echo print_r($usarr);
+       // echo "</pre>";
     }
   echo "</strong></h3>
     </div>
