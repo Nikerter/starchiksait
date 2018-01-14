@@ -101,8 +101,8 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-    height: 100vh;
-    background-size: cover;
+    height: 400px;
+    background-size: 850px;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -110,10 +110,10 @@ Image credits: unsplash.com
     background-image: url(../images/slider/begin.jpg);
 }
 .fade-carousel .slides .slide-2 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
+    background-image: url(../images/slider/begin.jpg);
 }
 .fade-carousel .slides .slide-3 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+    background-image: url(../images/slider/begin.jpg);
 }
 
 /********************************/
