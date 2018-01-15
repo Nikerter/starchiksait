@@ -19,7 +19,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .container {
-    background: #e74c3c;
+    background: linear-gradient(to left, #3a6186 , #89253e);;
     min-height: 100%;
 }
 
