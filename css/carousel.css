@@ -102,7 +102,7 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
     height: 400px;
-    background-size: 850px;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
