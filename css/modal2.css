@@ -114,10 +114,12 @@ a:active {
 }
 
 button {
+    width: 500px;
+    height: 40px;
     border: none;
     padding: 0.6em 1.2em;
-    background: #c0392b;
-    color: #fff;
+    background: linear-gradient(to top left,#00baac, #00675C);
+    color: #ffffff;
     font-family: 'Lato', Calibri, Arial, sans-serif;
     font-size: 1em;
     letter-spacing: 1px;
@@ -129,7 +131,7 @@ button {
 }
 
 button:hover {
-    background: #A5281B;
+    background: linear-gradient(-20deg, #00cda0 0%, #62dac1 100%);
 }
 
 @media screen and (max-width: 46.0625em) {
