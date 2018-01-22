@@ -19,10 +19,9 @@ perspective effects (not including the modals and the overlay).
 }
 
 .container {
-    background: linear-gradient(to left, #3a6186 , #89253e);;
+    background: linear-gradient(to left, #3a6186 , #89253e);
     min-height: 100%;
 }
-
 .md-modal {
     position: fixed;
     top: 50%;
