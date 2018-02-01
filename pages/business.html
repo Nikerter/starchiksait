@@ -109,28 +109,61 @@
         </div>-->
     </div>
         <div class="col-md-10">
-            <form action="#" method="post" class="center-block" style="background: black; opacity: 0.7; width: 80%; padding-bottom: 5%; padding-top: 2%; margin-top: 2%" onsubmit="checkform()" id="contactform">
+            <form action="#" method="post" class="center-block" style="background: black; opacity: 0.7; width: 50%; padding-bottom: 5%; padding-top: 2%; margin-top: 2%" onsubmit="checkform()" id="contactform">
                 <h2 class="text-center" >
                     Оставьте заявку на подключение
                 </h2>
-                <h3 style="margin-left: 10%">Название организации*</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="label" name="label" placeholder="ООО Девайс" >
-                <h3 style="margin-left: 10%">Физический адрес*</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="adres" name="adres" placeholder="Примерная 17 кв.165" >
-                <h3 style="margin-left: 10%">Номер телефона*</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="tel" name="tel" placeholder="+7 985 125 47 96">
-                <h3 style="margin-left: 10%">Эл. почта</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="mail" name="mail" placeholder="example@mail.ru">
-                <input type="submit" value="Отправить" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 80%;" id="submitbutton">
+<!--
+                <div class="row" style="margin-left: 10%">
+                    <h3 >Тип организации/Название организации*</h3>
+                    <div class="col-md-3" style="margin-left: -1%">
+                        <input type="text" class="form-control center-block text-center" style="width: 95%;" id="label" name="label" placeholder="ООО" >
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control center-block" style="width: 95%;" id="label" name="label" placeholder="Девайс" >
+                    </div>
+                </div>
+-->
+                <h3 style="margin-left: 15%">Названние организации</h3>
+                <input type="text" class="form-control center-block" style="width: 70%;" id="label" name="label" placeholder="ОАО Пример" >
+                
+                <h3 style="margin-left: 15%">Физический адрес*</h3>
+                <input type="text" class="form-control center-block" style="width: 70%;" id="adres" name="adres" placeholder="Примерная 17 кв.165" >
+                <h3 style="margin-left: 15%">Номер телефона*</h3>
+                <input type="text" class="form-control center-block" style="width: 70%;" id="tel" name="tel" placeholder="+7 985 125 47 96">
+                <h3 style="margin-left: 15%">Эл. почта</h3>
+                <input type="text" class="form-control center-block" style="width: 70%;" id="mail" name="mail" placeholder="example@mail.ru">
+                <input type="submit" value="Отправить" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 70%;" id="submitbutton">
                 <h2 class="text-center" style="padding: 5%; background: red; display: none;" id="caution">ochko</h2>
             </form>
             
             <script>
                 function checkform() {
+                    
                     var label = document.getElementById('label').value;
                     var adres = document.getElementById('adres').value;
                     var tel = document.getElementById('tel').value;
                     var mail = document.getElementById('mail').value;
+                    
+                    if (!label || !adres || !tel){
+                        alert("Ты кого наебать вздумал?");
+                    
+                    } else {
+                        alert("Проходите ебать");
+                        if (!mail){
+                            alert("Вы не ввели мэйл, но это не критично");
+                        } else {    
+                            var checkmail = mail.match(/^[A-Za-z0-9][A-Za-z0-9\._-]*[A-Za-z0-9_]*@([A-Za-z0-9]+([A-Za-z0-9-]*[A-Za-z0-9]+)*\.)+[A-Za-z]+$/);
+                            if (!checkmail) {
+                                alert("Мэйл введен некорректно");
+                            } else {
+                                alert("мєйл корректный");
+                            };
+                        }
+                    }
+                    
+                    
 //                    if () {
 //                        alert("Очко")
 //                    };
@@ -141,8 +174,10 @@
 //                    alert(tel);
 //                    alert(mail);
                     //if ();
-                    var caution = document.getElementById('caution');
-                    caution.style.display = "block";
+                    
+                    
+//                    var caution = document.getElementById('caution');
+//                    caution.style.display = "block";
                     //alert("ochko");
                 }
                 
