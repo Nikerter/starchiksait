@@ -10,10 +10,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.js"></script>
+    
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.validate.js" type="text/javascript"></script>
+    
 <!--<script src="../js/script.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora|Play" rel="stylesheet">
+    
 </head>
 <body>
     <nav class="navbar navbar-inverse" role="navigation">
@@ -48,6 +53,18 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+<!--
+    <style>
+        @media (max-width : 1000px){
+/*Растянуть на весь экран*/
+        .btn{display: none;};
+        }
+        
+    </style>
+    <button class="btn btn-lg btn-danger center-block">
+    Очко
+    </button>
+-->
 <div class="container-fluid"  style="background: url(../images/biznes-sdelka2.jpg); color: #dff0d8; background-size: cover; height: px">
     <h1 style="text-align: center; font-family: 'Play', sans-serif;color: #d9edf7;">Бизнес</h1>
            <h3 style="text-align: center; font-family: 'Play', sans-serif;color: #d9edf7">ИНТЕРНЕТ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ И ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ</h3>
@@ -92,20 +109,45 @@
         </div>-->
     </div>
         <div class="col-md-10">
-            <form action="../scripts/business.php" method="post" class="center-block" style="background: black; opacity: 0.7; width: 80%; padding-bottom: 5%; padding-top: 2%; margin-top: 10%">
+            <form action="#" method="post" class="center-block" style="background: black; opacity: 0.7; width: 80%; padding-bottom: 5%; padding-top: 2%; margin-top: 2%" onsubmit="checkform()" id="contactform">
                 <h2 class="text-center" >
                     Оставьте заявку на подключение
                 </h2>
                 <h3 style="margin-left: 10%">Название организации*</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="label" name="label" placeholder="ООО Девайс" required>
+                <input type="text" class="form-control center-block" style="width: 80%;" id="label" name="label" placeholder="ООО Девайс" >
                 <h3 style="margin-left: 10%">Физический адрес*</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="adres" name="adres" placeholder="Примерная 17 кв.165" required>
+                <input type="text" class="form-control center-block" style="width: 80%;" id="adres" name="adres" placeholder="Примерная 17 кв.165" >
                 <h3 style="margin-left: 10%">Номер телефона*</h3>
-                <input type="text" class="form-control center-block" style="width: 80%;" id="tel" name="tel" placeholder="+7 985 125 47 96" required>
+                <input type="text" class="form-control center-block" style="width: 80%;" id="tel" name="tel" placeholder="+7 985 125 47 96">
                 <h3 style="margin-left: 10%">Эл. почта</h3>
                 <input type="text" class="form-control center-block" style="width: 80%;" id="mail" name="mail" placeholder="example@mail.ru">
-                <input type="submit" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 80%;">
+                <input type="submit" value="Отправить" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 80%;" id="submitbutton">
+                <h2 class="text-center" style="padding: 5%; background: red; display: none;" id="caution">ochko</h2>
             </form>
+            
+            <script>
+                function checkform() {
+                    var label = document.getElementById('label').value;
+                    var adres = document.getElementById('adres').value;
+                    var tel = document.getElementById('tel').value;
+                    var mail = document.getElementById('mail').value;
+//                    if () {
+//                        alert("Очко")
+//                    };
+                    
+                    
+//                    alert(label);
+//                    alert( adres);
+//                    alert(tel);
+//                    alert(mail);
+                    //if ();
+                    var caution = document.getElementById('caution');
+                    caution.style.display = "block";
+                    //alert("ochko");
+                }
+                
+            </script>
+            
 <!--
                <form action="#" style="background: black; opacity: 0.7;">
                 <p style="text-align: center;font-size: 15px; font-family: 'Lora', serif;">Для подбора условий по подключению к интернет, заполните форму и в ближайшее время с Вами свяжется оператор с индивидуальным предложением!</p>
