@@ -100,25 +100,127 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
             font-size: 100px;
         }
         
-        @media (max-width : 1500px){
+        .mbscap{
+            font-size: 60px;
+        }
+        
+        @media (max-width: 1870px) {
             .mbs{
-                font-size: 80px;
+                font-size: 85px;
             }
         }
         
-        @media (max-width: 1000px){
+        @media (max-width : 1660px){
+            .mbs{
+                font-size: 80px;
+            }
+            
+            .mbscap{
+                font-size: 40px;
+            }
+            
+            .oplata{
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 1580px) {
             .mbs{
                 font-size: 60px;
             }
         }
         
+        
+        @media (max-width: 1246px){
+            .mbs{
+                font-size: 50px;
+            }
+            
+            .mbscap{
+                font-size: 30px;
+            }
+            
+            .oplata{
+                font-size: 16px;
+            }        
+        }
+        
+        @media (max-width: 1130px) {
+            .btn-res{
+                font-size: 14px;
+            }
+            
+            .mbs{
+                font-size: 40px;
+            }
+        }
+        
+        @media (max-width: 1038px){
+            .mbscap{
+                font-size: 28px;
+            }
+
+        }
+        
+        @media (max-width: 991px) {
+            .mbs{
+                font-size: 100px;
+            }
+            
+            .mbscap{
+                font-size: 60px;
+            }
+            
+            .oplata{
+                font-size: 30px;
+            }
+            
+            .mbscap{
+                font-size: 60px;
+                }
+            
+            .btn-res{
+                font-size: 25px;
+            }
+            
+            .row{
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+        }
+/*
+        @media (max-width: 600px){
+            .mbs{
+                font-size: 40px;
+            }
+        }
+*/
+        
     </style>
+<!--
+        <button class="btn-lg" onclick="wiht()">
+            экран
+        </button>
+-->
     <div class="row" style="background: linear-gradient(to right, #000000, #434343); padding-top: 10%; padding-bottom: 10%">
+        
+        
+<!--
+        <script>
+            function wiht() {
+                width=screen.width; // ширина  
+                height=screen.height; // высота  
+                alert ("Разрешение экрана: "+width+"x"+height);                
+            }
+        </script> 
+-->
+        
+        
         <div class="col-md-1">
         </div>
         <div class="col-md-2">
                 <div class="thumbnail" style="background: #ffffff;">
-                  <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">30</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">30</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
                         300 Руб./Месяц
@@ -126,13 +228,13 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                         Цена фиксированная
                     </p>
                     <hr>
-                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#300tar">Подключить</button></p>
+                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
                   </div>
                 </div>
         </div>
         <div class="col-md-2">
             <div class="thumbnail" style="background: #ffffff;">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">70</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">70</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
                         300 Руб./Месяц
@@ -140,13 +242,27 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                         Цена фиксированная
                     </p>
                     <hr>
-                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#300tar">Подключить</button></p>
+                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
+                  </div>
+                </div>
+        </div>
+        <div class="col-md-2">
+            <div class="thumbnail" style="background: #ffffff;">
+                  <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">100</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
+                  <div class="caption" style="margin-top: 110px">
+                    <p class="text-center oplata">
+                        300 Руб./Месяц
+                        <br>
+                        Цена фиксированная
+                    </p>
+                    <hr>
+                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
                   </div>
             </div>
         </div>
         <div class="col-md-2">
             <div class="thumbnail" style="background: #ffffff;">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">100</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">150</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
                         300 Руб./Месяц
@@ -154,13 +270,13 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                         Цена фиксированная
                     </p>
                     <hr>
-                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#300tar">Подключить</button></p>
+                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
                   </div>
             </div>
         </div>
         <div class="col-md-2">
             <div class="thumbnail" style="background: #ffffff;">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">150</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">200</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
                         300 Руб./Месяц
@@ -168,21 +284,7 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                         Цена фиксированная
                     </p>
                     <hr>
-                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#300tar">Подключить</button></p>
-                  </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="thumbnail" style="background: #ffffff;">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">200</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
-                  <div class="caption" style="margin-top: 110px">
-                    <p class="text-center oplata">
-                        300 Руб./Месяц
-                        <br>
-                        Цена фиксированная
-                    </p>
-                    <hr>
-                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#300tar">Подключить</button></p>
+                    <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
                   </div>
             </div>
         </div>
