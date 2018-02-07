@@ -4148,7 +4148,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+/*  margin-bottom: 20px;*/
   border: 1px solid transparent;
 }
 @media (min-width: 1200px) {
@@ -4254,9 +4254,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 35px;
   line-height: 20px;
   height: 50px;
+  font-family: 'Orbitron', sans-serif;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4307,6 +4308,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  font-size: 22px;
+  font-family: 'Marmelad', sans-serif;
 }
 @media (max-width: 1199px) {
   .navbar-nav .open .dropdown-menu {
