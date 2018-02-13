@@ -6,16 +6,27 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/modal.css">
-    <link rel="stylesheet" href="../css/modal2.css">
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../css/card.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pattern.css" />
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
     <script src="../js/modernizr.custom.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            var root = document.getElementsByTagName('html')[0];
+            root.setAttribute('class', 'ff');
+        };
+    </script>
 </head>
-<body>
+<body class="demo-3">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -44,499 +55,230 @@
             <li><a href="payment.html">Оплата</a></li>
             <li><a href="contacts.html">Контакты</a></li>
             <li><a href="https://b.butovonet.ru/webroom/"  target="_blank">Личный кабинет</a></li>
-          </ul>       
+          </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <!--
-         <div class="md-modal md-effect-1" id="modal-1">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-2" id="modal-2">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-3" id="modal-3">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-4" id="modal-4">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-5" id="modal-5">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-6" id="modal-6">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-7" id="modal-7">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-8" id="modal-8">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-9" id="modal-9">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-10" id="modal-10">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-11" id="modal-11">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-12" id="modal-12">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-          -->
-         <div class="md-modal md-effect-13" id="modal-1">
-             <div class="md-content">
-                 <h3>Обещанный платёж</h3>
-                 <div>
-                     <p style="text-align: center"><strong>Услуга «Обещанный платеж» позволяет пользоваться услугами StarLineTelecom в кредит при отсутствии денежных средств на Вашем Лицевом счете.</strong></p>
-                     <p style="text-align: justify">Услуга «Обещанный платеж» позволяет пользоваться услугами StarLineTelecom в кредит при отсутствии денежных средств на Вашем Лицевом счете. Услуга доступна вам в Автоматическом или Ручном режиме. Автоматический режим – услуга «Обещанный платеж» активируется автоматически каждый раз при приближении к порогу финансовой блокировки, обеспечивая еще несколько дней бесперебойного пользования услугами и время для внесения платежа. Ручной режим – в случае попадания Лицевого счета в финансовую блокировку услуга «Обещанный платеж» может быть заказана Вами самостоятельно в Личном кабинете или через СМС. Заказать услугу «Обещанный платеж» через СМС Вы можете самостоятельно с Вашего мобильного телефона. Просто отправьте бесплатное смс-сообщение на бесплатный номер 2558 с текстом: «StarLineTelecom ОП».</p>
-                     <button class="md-close">Закрыть</button>
-                 </div>
-             </div>
-         </div>
-    <div class="md-modal md-effect-13" id="modal-2">
-        <div class="md-content">
-            <h3>Родительский контроль</h3>
-            <div>
-                    <p style="text-align: center"><strong>Доверьте нам контроль за временем, которое ваш ребенок проводит в Сети. Досрочное снятие блокировки доступа в Интернет возможно только через Личный кабинет после ввода пин-кода.</strong></p>
-                    <p style="text-align: justify">Дети проводят слишком много времени в Интернете? Установите свое время, когда доступ в Интернет будет невозможен. Доверьте нам контроль за временем, которое ваш ребенок проводит в Сети. Досрочное снятие блокировки доступа в Интернет возможно только через Личный кабинет после ввода пин-кода. Плата за пользование Услугой списывается в момент подключения Услуги, за полные текущие сутки. При пользовании услугой «Родительский контроль» абонентская плата за услугу «Доступ в Интернет» взимается в полном объеме согласно выбранному вами тарифному плану. При отключении Услуги абонентская плата перестает взиматься со следующих суток после подачи заявки в Личном кабинете. Подключение/отключение услуги «Родительский контроль» осуществляется только через Личный кабинет и происходит в течение 1 часа. Для подключения услуги «Родительский контроль» на вашем лицевом счёте должна быть сумма, достаточная для оплаты 1 дня работы Услуги,основных и дополнительных услуг с ежемесячной абонентской платой, подключённых вами. Пин-код для доступа к Услуге высылается в виде SMS сообщения на номер, указанный вами в разделе личного кабинета/Договоре в поле «Мобильный телефон». Инструкция по подключению Услуги размещена в Личном кабинете в разделе Услуги/ Родительский контроль. Стоимость SMS-информирования (SMS с Пин-кодом) включается в стоимость Услуги. В Личном кабинете вам доступно недельное расписание, в котором каждые сутки разбиты на получасовые интервалы. Нажимая мышкой на эти интервалы, вы сами разрешаете или запрещаете доступ в Интернет в определённый день недели в заданный интервал времени. При этом родители имеют возможность отменить ранее установленный запрет доступа в любое время по своему желанию. Подключение Услуги не запрещает изменения тарифного плана, подключения/отключения дополнительных услуг, за исключением услуги «Турбокнопка», которая не может быть заказана в период запрета доступа в сеть Интернет. Блокировка Услуги осуществляется автоматически при отсутствии средств на лицевом счете, разблокировка – при поступлении средств на лицевой счет. В период действия услуги «Добровольная блокировка» абонентская плата за Услугу «Родительский контроль» не взимается.</p>
-                    <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-3">
-        <div class="md-content">
-            <h3>Турбокнопка</h3>
-            <div>
-                <p style="text-align: center"><strong>Увеличивайте мгновенно скорость соединения до 100Мбит/с. Быстро скачать фильм или тяжёлый файл больше не проблема! Вы сами определяете время действия услуги: от 1 до 24 часов.</strong></p>
-                <div class="table-responsive">
-                    <table class="table" style="text-align: center;font-size: 20px;font-family: 'Lora', serif;">
-                        <tr style="font-weight: bold;">
-                            <td>Тариф</td>
-                            <td>Скорость Вх./Исх.канала Мбит/с</td>
-                            <td>Период действия</td>
-                            <td>Стоимость,руб.вкл.НДС</td>
-                        </tr>
-                        <tr>
-                            <td>Турбокнопка 1</td>
-                            <td>100/100</td>
-                            <td>1 час</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Турбокнопка 3</td>
-                            <td>100/100</td>
-                            <td>3 час</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>Турбокнопка 6</td>
-                            <td>100/100</td>
-                            <td>6 час</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>Турбокнопка 24</td>
-                            <td>100/100</td>
-                            <td>24 час</td>
-                            <td>50</td>
-                        </tr>
-                    </table>
-                </div>
-                <p style="text-align: justify">Перед подключением услуги убедитесь, что: На лицевом счете достаточно средств; Ваша сетевая карта или Wi-Fi роутер поддерживают скорость 100Мбит/с; Если срок активации первичного заказа еще не истек, то повторная активация услуги «Турбокнопка» недоступна; В период действия услуги «Турбокнопка» смена тарифного плана, а также добровольная блокировка недоступны</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-4">
-        <div class="md-content">
-            <h3>Статический IP-адрес</h3>
-            <div>
-                <p style="text-align: center"><strong>«Статический IP-адрес» - ваш постоянный адрес в Интернете, который закреплён за вашим логином и остается неизменным всегда.</strong></p>
-                <p style="text-align: justify">Зачем вам может понадобиться услуга «Статический IP-адрес»? Воспользуйтесь ею, чтобы: без препятствий присоединяться к любой доступной игровой сессии, поднять скорость скачивания из файлообменных сетей и торрентов, создать свой сервер, защитить свои электронные кошельки. Стоимость подключения услуги «Статический IP-адрес» - 150 руб. Абонентская плата за пользование услугой – 150 рублей в месяц.</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-5">
-        <div class="md-content">
-            <h3>Кроссплатформа</h3>
-            <div>
-                <p style="text-align: center"><strong>Храненние записей передач каналов за 14 дней около 30 каналов с выбором английского языка. возможность просмотра на 5 устройствах по одной подписке.</strong></p>
-                <p style="text-align: justify">Тут будет более детальное описание</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-6">
-        <div class="md-content">
-            <h3>Антивирус "ESET NOD 32"</h3>
-            <div>
-                <p style="text-align: center"><strong>Антивирус не только защищает вас от всех видов угроз, защищает интернет платежи, общение в соцсетях, детей в интернете.</strong></p>
-                <p style="text-align: justify">Тут будет более детальное описание</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-7">
-        <div class="md-content">
-            <h3>StarLineTelecom премиум</h3>
-            <div>
-                <p style="text-align: center"><strong>Услуга «StarLineTelecom премиум» для абонентов StarLineTelecom позволяет заказать у провайдера услуг Интернет и Цифрового ТВ работы по укладке кабеля и настройке собственного оборудования абонента.</strong></p>
-                <p style="text-align: justify">Заказать услугу «StarLineTelecom премиум» можно одновременно с заявкой на подключение. Если вы уже подключены к StarLineTelecom и хотите, чтобы вам аккуратно уложили провода или настроили ваш маршрутизатор, приобретенный самостоятельно, вы также можете заказать «StarLineTelecom премиум» и наши специалисты выполнят все положенные работы в удобное время.</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-8">
-        <div class="md-content">
-            <h3>Блокировка интернета</h3>
-            <div>
-                <p style="text-align: center"><strong>Период блокировки составляет от 5 до 360 календарных дней. В течение первых 60 календарных дней плата за пользование услугой «Блокировка интернета» не взимается.</strong></p>
-                <p style="text-align: justify">Минимальный период однократного заказа, в том числе продление услуги «Добровольная блокировка», составляет 5 календарных дней, максимальный суммарный период заказа услуги в течение одного календарного года составляет 90 календарных дней; В период действия услуги «Добровольная блокировка» начисление абонентской платы за все подключенные услуги (Интернет, Цифровое телевидение и дополнительные услуги) не производится, за исключением следующих услуг: «Аренда оборудования ЦТВ», «Аренда Wi-Fi роутера» и «Статический IP-адрес». Плата за пользование услугой «Добровольная блокировка» ежегодно в течение первых 30 календарных дней не взимается; Стоимость услуги «Добровольная блокировка» с 31 по 90 день в календарном году составляет 5 руб. в день; После завершения периода действия услуги «Добровольная блокировка» начисление абонентской платы за услуги Интернет и Цифровое телевидение (в том числе за дополнительные пакеты и услугу «Мультирум») осуществляется в соответствии с тарифными планами, действовавшими до активации услуги «Добровольная блокировка»; Смена тарифного плана и управление дополнительными услугами в период действия услуги «Добровольная блокировка» невозможно. Условия предоставления услуги: 1. Заказ услуги Подключить услугу Вы можете в Личном кабинете или по телефону круглосуточной службы поддержки 8 800 707 12 12; Услуга предоставляется со следующего после заказа календарного дня; Для заказа услуги «Добровольная блокировка» на балансе должны быть в наличии средства, достаточные для оплаты 1 дня работы всех ранее подключенных базовых и дополнительных услуг, в том числе услуг Аренды оборудования. 2. Отказ от услуги После заказа услуги «Добровольная блокировка» абонент может отказаться от услуги до начала и в период действия услуги «Добровольная блокировка» через call-центр и Личный кабинет; При отказе от услуги «Добровольная блокировка» в период действия услуги «Добровольная блокировка», все услуги абонента активируются в течение одного часа, начисление абонентской платы по действующим тарифным планам начинается с текущих суток.</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-9">
-        <div class="md-content">
-            <h3>Компьютерная помощь</h3>
-            <div>
-                <p style="text-align: center"><strong>Интернет провайдер StarLineTelecom поможет починить компьютерную технику и настроить программное обеспечение. Для оформления заявки обратитесь по телефону 8 800 707 12 12.</strong></p>
-                <p style="text-align: justify">Тут будет более детальное описание</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-10">
-        <div class="md-content">
-            <h3>Видеонаблюдение и видеоконтроль</h3>
-            <div>
-                <p style="text-align: center"><strong>Интернет провайдер "StarLineTelecom" Предоставляет возможность установки видеонаблюдения, просмотра в онлайн режиме и режим записи</strong></p>
-                <p style="text-align: justify">Тут будет более детальное описание</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <div class="md-modal md-effect-13" id="modal-11">
-        <div class="md-content">
-            <h3>PLC решения</h3>
-            <div>
-                <p style="text-align: center"><strong>PLC Решения</strong></p>
-                <p style="text-align: justify">PLC адаптер от StarLineTelecom представляет собой устройство, которое позволяет передавать интернет-сигнал по электрической сети. Такое оборудование поможет избавиться от прокладки дополнительных проводов в квартире или частном доме.</p>
-                <button class="md-close">Закрыть</button>
-            </div>
-        </div>
-    </div>
-    <!--
-         <div class="md-modal md-effect-14" id="modal-14">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-15" id="modal-15">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-16" id="modal-16">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-17" id="modal-17">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-18" id="modal-18">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-19" id="modal-19">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-         <div class="md-modal md-effect-20" id="modal-20">
-             <div class="md-content">
-                 <h3>Modal Dialog</h3>
-                 <div>
-                     <p>This is a modal window. You can do the following things with it:</p>
-                     <ul>
-                         <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                         <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                         <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                     </ul>
-                     <button class="md-close">Close me!</button>
-                 </div>
-             </div>
-         </div>
-
-         <div class="container">
-               <div class="column">
- -->
-<!--
-                    <button class="md-trigger" data-modal="modal-1">Fade in &amp; Scale</button>
-                    <button class="md-trigger" data-modal="modal-2">Slide in (right)</button>
-                    <button class="md-trigger" data-modal="modal-3">Slide in (bottom)</button>
-                    <button class="md-trigger" data-modal="modal-4">Newspaper</button>
-                    <button class="md-trigger" data-modal="modal-5">Fall</button>
-                    <button class="md-trigger" data-modal="modal-6">Side Fall</button>
-                    <button class="md-trigger" data-modal="modal-7">Sticky Up</button>
-                    <button class="md-trigger" data-modal="modal-8">3D Flip (horizontal)</button>
-                    <button class="md-trigger" data-modal="modal-9">3D Flip (vertical)</button>
-                    <button class="md-trigger" data-modal="modal-10">3D Sign</button>
-                    <button class="md-trigger" data-modal="modal-11">Super Scaled</button>
-                    <button class="md-trigger" data-modal="modal-12">Just Me</button>
--->
-    <div class="container-fluid" style="background: linear-gradient(to right, #000000, #434343)">
-                    <div class="row">
-                        <div class="col-md-12">
-                           
-                            <button>
-                                
-                            </button>
-                            
-                            <button class="md-trigger center-block" data-modal="modal-1">Обещанный платёж</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-2">Родительский контроль</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-3">Турбокнопка</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-4">Статический IP-адрес</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-5">Кроссплатформа</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-6">Антивирус "ESET NOD 32"</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-7">StarLineTelecom премиум</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-8">Блокировка интернета</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-9">Компьютерная помощь</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-10">Видеонаблюдение и видеоконтроль</button>
-                            <br>
-                            <button class="md-trigger center-block" data-modal="modal-11">PLC решения</button>
-
+    <div class="container">
+        <header class="codrops-header">
+            <h1>Card Expansion Effect with SVG clipPath  <span>Polygonal clip, reversed pattern.</span></h1>
+        </header>
+        <div class="content">
+            <!-- trianglify pattern container -->
+            <div class="pattern pattern--hidden"></div>
+            <!-- cards -->
+            <div class="wrapper">
+                <div class="card">
+                    <div class="card__container card__container--closed">
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <clipPath id="clipPath1">
+                                    <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">Tristan and Isolde</h2>
+                                <p class="card__subtitle">A modern day love story</p>
+                            </div>
+                            <div class="card__copy">
+                                <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                                <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                                <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                                <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                                <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                                <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
                         </div>
                     </div>
-        </div>
-<!--
-                    <button class="md-trigger" data-modal="modal-14">3D Rotate Bottom</button>
-                    <button class="md-trigger" data-modal="modal-15">3D Rotate In Left</button>
-                    <button class="md-trigger" data-modal="modal-16">Blur</button>
-                     special modal that will add a perspective class to the html element 
-                    <button class="md-trigger md-setperspective" data-modal="modal-17">Let me in</button>
-                    <button class="md-trigger md-setperspective" data-modal="modal-18">Make way!</button>
-                    <button class="md-trigger md-setperspective" data-modal="modal-19">Slip from top</button>
--->
-<!--
-                </div>-->
+                </div>
+                <div class="card">
+                    <div class="card__container card__container--closed">
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <clipPath id="clipPath2">
+                                    <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">About Helen</h2>
+                                <p class="card__subtitle">A story about a woman</p>
+                            </div>
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+                                    <span class="meta__author">Frank Posterius</span>
+                                    <span class="meta__date">06/16/2015</span>
+                                </div>
+                                <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                                <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                                <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                                <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                                <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                                <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container card__container--closed">
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <clipPath id="clipPath3">
+                                    <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">A mild winter</h2>
+                                <p class="card__subtitle">Helen's view on wells</p>
+                            </div>
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+                                    <span class="meta__author">Sarah Lester</span>
+                                    <span class="meta__date">06/16/2015</span>
+                                </div>
+                                <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                                <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                                <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                                <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                                <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                                <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container card__container--closed">
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <clipPath id="clipPath4">
+                                    <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">Food sources</h2>
+                                <p class="card__subtitle">What will we eat in 30 years?</p>
+                            </div>
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+                                    <span class="meta__author">Lena Bestofos</span>
+                                    <span class="meta__date">06/14/2015</span>
+                                </div>
+                                <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                                <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                                <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                                <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                                <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                                <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container card__container--closed">
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <clipPath id="clipPath5">
+                                    <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">Swimming in the ocean</h2>
+                                <p class="card__subtitle">A Makrel's story</p>
+                            </div>
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="img/authors/5.png" alt="author05" />
+                                    <span class="meta__author">Michaela Walters</span>
+                                    <span class="meta__date">06/11/2015</span>
+                                </div>
+                                <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                                <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                                <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                                <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                                <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                                <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container card__container--closed">
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                            <defs>
+                                <clipPath id="clipPath6">
+                                    <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">Freedom Fighters</h2>
+                                <p class="card__subtitle">When it's too hot to think</p>
+                            </div>
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="img/authors/6.png" alt="author06" />
+                                    <span class="meta__author">Tom Goldman</span>
+                                    <span class="meta__date">06/10/2015</span>
+                                </div>
+                                <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                                <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                                <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                                <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                                <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                                <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <div class="md-overlay"></div><!-- the overlay element -->
-        <!-- classie.js by @desandro: https://github.com/desandro/classie -->
-        <script src="../js/classie.js"></script>
-        <script src="../js/modalEffects.js"></script>
-        <!-- for the blur effect -->
-        <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-        <script>
-            // this is important for IEs
-            var polyfilter_scriptpath = '../js/';
-        </script>
-        <script src="../js/cssParser.js"></script>
-        <script src="../js/css-filters-polyfill.js"></script>
-    </div><!-- /.container -->
+            <!-- /cards -->
+        </div><!-- /content -->
+        <!-- Related demos -->
+        <section class="content content--related">
+            <p>If you enjoyed this demo you might also like:</p>
+            <a class="media-item" href="http://tympanus.net/Development/AnimatedGridLayout/">
+                <img class="media-item__img" src="img/related/GridItemAnimation.jpg">
+                <h3 class="media-item__title">Grid Item Animation Layout</h3>
+            </a>
+            <a class="media-item" href="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/">
+                <img class="media-item__img" src="img/related/ThumbnailGridExpandingPreview.jpg">
+                <h3 class="media-item__title">Thumbnail Grid with Expanding Preview</h3>
+            </a>
+        </section>
+    </div>
+    <!-- /container -->
+    <!-- JS -->
+    <script src="../js/vendors/trianglify.min.js"></script>
+    <script src="../js/vendors/TweenMax.min.js"></script>
+    <script src="../js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="../js/vendors/cash.min.js"></script>
+    <script src="../js/Card-polygon.js"></script>
+    <script src="../js/demo-3.js"></script>
 </body>
 <!--   Footer   -->
 <footer class="myfooter">
