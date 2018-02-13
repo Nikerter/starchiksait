@@ -204,7 +204,7 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
             экран
         </button>
 -->
-    <div class="row" style="background: linear-gradient(to right, #000000, #434343); padding-top: 10%; padding-bottom: 10%">
+    <div class="row" style="background:#1B1A1C; padding-top: 10%; padding-bottom: 10%">
         
         
 <!--
@@ -292,7 +292,6 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
         </div>
         <div class="col-md-1"></div>
     </div>
-<!--
     <div class="row trf">
                     <div class="col-md-4">
                         <img class="spdmtr center-block img-circle" src="../images/speed30.png" alt="30 Мбит/с">
@@ -309,25 +308,22 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                 
                         <div class="modal fade" id="300tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
-                            <div class="modal-content">
+                            <div class="modal-content" style="background: #1B1A1C; color: azure">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Подключение 30 Мбит/с</h4>
+                                <h3 class="modal-title text-center" id="myModalLabel">Подключение 30 Мбит/с</h3>
                               </div>
                               <div class="modal-body">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <h2>Вы собираетесь подключить тариф стоимостью <br> <br><strong> 300 Руб./Месяц </strong></h2>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
-                                  </div>
+<!--
+                              <div class="row text-center">
+                                  <h2>Вы собираетесь подключить тариф стоимостью<strong> 300 Руб./Месяц </strong></h2>
                               </div>
-
-                              <hr>
-                              <form action="../scripts/tariff.php" method="post">
-                                  <div class="row">
-                                     <div class="col-md-12">   
+                              <div class="row">
+                                  <form action="../scripts/tariff.php" method="post">
+                                     <div class="col-md-6" style="margin-top:20%">
+                                         <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
+                                     </div>
+                                     <div class="col-md-6">
                                          <h2  class="text-center">Необходимо указать свои контактные данные</h2>
                                          <div class="form-group">
                                             <label for="exampleInputEmail1">Номер телефона*</label>
@@ -342,32 +338,98 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                                             <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
                                          </div>
                                      </div>
+                                  </form>
+                              </div>
+-->
+                             <div class="row text-center">
+                                  <div class="col-md-12">
+                                      <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
+                                  </div>                                     
+                             </div>
+                              <div class="row" style="margin-top: 100px;">
+                                  <div class="col-md-12 text-center">
+                                      <h2>Вы собираетесь подключить тариф стоимостью<strong> 300 Руб./Месяц </strong></h2>
+                                  </div>
+                              </div>
+
+                              <form action="../scripts/tariff.php" method="post">
+                                  <div class="row" >
+                              <hr>
+                                     <div class="col-md-12">   
+                                         <h2  class="text-center">Необходимо указать свои контактные данные</h2>
+                                         <br>
+                                         <div class="form-group">
+<!--                                            <label for="exampleInputEmail1">Номер телефона*</label>-->
+                                            <h3 class="text-center">Номер телефона*</h3>
+                                            <input name="tel" type="tel" class="form-control center-block" style="width: 80%" id="tel" placeholder="+70007775599" required>
+                                         </div>
+                                         <div class="form-group">
+<!--                                            <label for="exampleInputEmail1">Адрес*</label>-->
+                                            <h3 class="text-center">Адрес*</h3>
+                                            <input name="adres" type="text" class="form-control center-block" style="width: 80%" id="adres" placeholder="Примерная 17 кв.165" required>
+                                         </div>
+                                         <div class="form-group">
+<!--                                            <label for="exampleInputEmail1">Эл. почта</label>-->
+                                            <h3 class="text-center">Элекстронная почта</h3>
+                                            <input name="mail" type="email" class="form-control center-block" style="width: 80%" id="email" placeholder="mail@mail.mail">
+                                         </div>
+                                     </div>
                                   </div>
 
                                   <div class="row">
-                                      <h2 class="text-center">Также вы можете подключить дополнительные услуги:</h2>
+                                      <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
+                                      <br>
                                       <div class="btn-group center-block" data-toggle="buttons">
-                                          <div class="col-md-4 center-block">
+                                          <div class="col-md-4 center-block text-center">
+<!--
+                                              <input type="checkbox" style="height: 200px; width: 200px">
                                               <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga1">
+                                              </button>
+-->
+<!--
+                                                    <label for="usluga1" class="text-center" style="font-size: 25px">Роутер</label>
+                                                    <hr>
+                                                    <label for="usluga1" class="text-center" style="font-size: 25px">100 Рублей</label>
+-->
+                                                    <h3>Роутер</h3>
+                                                    <hr>
+                                                    <h3>100 рублей</h3>
+                                                    <input class="usluga-check" type="checkbox" name="usluga1">                   
                                                     <input hidden="hidden" type="text" name="uslugcost1" value="100">
                                                     <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
-                                              </button>
-                                              <label for="uskuga1">Third Option success</label>
                                           </div>
-                                          <div class="col-md-4 ">
+                                          <div class="col-md-4 text-center">
+<!--
                                               <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 Руб..
+                                              </button>
                                                   <input hidden="hidden"  type="checkbox" name="usluga2">
+-->
+<!--
+                                                  <label for="usluga2" class="text-center" style="font-size: 25px">Антивирус</label> 
+                                                  <hr>
+                                                  <label for="usluga2" class="text-center" style="font-size: 25px">99 рублей</label> 
+-->
+                                                  <h3>Антивирус</h3>
+                                                  <hr>
+                                                  <h3>99 рублей</h3>
+                                                  <input class="usluga-check" type="checkbox" name="usluga2">
+                                                                                                    
                                                   <input hidden="hidden" type="text" name="uslugcost2" value="99">
                                                   <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
-                                              </button>
                                           </div>
-                                          <div class="col-md-4 center-block">
+                                          <div class="col-md-4 text-center">
+<!--
                                                 <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga3">
+                                                </button>
+                                                    <input hidden="hidden" type="checkbox" name="usluga3">
+-->
+                                                    <h3>PLC</h3>
+                                                    <hr>
+                                                    <h3>89 рублей</h3>
+                                                    <input class="usluga-check" type="checkbox" name="usluga3">
+                                                    
                                                     <input hidden="hidden" type="text" name="uslugcost3" value="89">
                                                     <input hidden="hidden" type="text" name="usluganame3" value="PLC">
-                                                </button>
                                           </div>
                                       </div>
                                       <input hidden="hidden" type="text" name="tariffcost" value="300">
@@ -376,9 +438,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                                   <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
                               </form>
                               </div>
+<!--
                               <div class="modal-footer">
                                   <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
                               </div>
+-->
                             </div>
                           </div>
                         </div>
@@ -748,7 +812,6 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                         
                     </div>
                 </div>
--->
     <footer class="myfooter">
         <div class="container-fluid">
             <div class="row">
