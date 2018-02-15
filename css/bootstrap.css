@@ -4309,7 +4309,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
   font-size: 22px;
-  font-family: 'Marmelad', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 @media (max-width: 1199px) {
   .navbar-nav .open .dropdown-menu {
