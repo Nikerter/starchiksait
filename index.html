@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+   
+    
+    
     <meta charset="UTF-8">
     <title>StarlineTeleCom</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/jquery-3.2.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Play" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">-->
+    
+    
+    
+<!--    СЛайдер ============================ -->
+<!--    <link href="css/slider/ma5slider.min.css" rel="stylesheet" type="text/css">-->
+    <script src="js/slider/run_prettify.js"></script>
+    <script src="js/slider/jquery.min.js"></script>
+    <script src="js/slider/jquery-ui.min.js"></script>
+    <script src="js/slider/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/slider/functions.js"></script>
+    
+    <link href="css/slider/ma5slider.min.css" rel="stylesheet" type="text/css">
+    
+    <script src="js/slider/ma5slider.min.js"></script>
+    
+    <script>
+        $(window).on('load', function () {
+            $('.ma5slider').ma5slider();
+            // Methods
+            $('#example-34').ma5slider('goToSlide', 3);
+            // Calls
+            $('#example-34').on('ma5.animationStart', function () {
+                console.log('event animationStart');
+            });
+            $('#example-34').on('ma5.animationEnd', function () {
+                console.log('event animationEnd');
+            });
+            $('#example-34').on('ma5.firstSlide', function () {
+                console.log('event firstSlide');
+            });
+            $('#example-34').on('ma5.lastSlide', function () {
+                console.log('event lastSlide');
+            });
+            $('#example-34').on('ma5.activeSlide', function (event, slide) {
+                console.log( 'event activeSlide: ' + slide );
+            });
+        });
+    </script>
+<!--    Конец слайдера ===================== -->
+
+
+
 </head>
 <body>
 <nav class="navbar navbar-inverse" role="navigation">
@@ -49,48 +94,24 @@
 </nav>
 <div class="container-fluid" style="background: linear-gradient(to right, #000000, #434343); color: #ffffff">
     <div class="row">
-        <div class="col-md-8" style="padding-left: 0px">
-            <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel" style="height: 400px">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#bs-carousel" data-slide-to="1"></li>
-                    <li data-target="#bs-carousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner"  style="height: 400px">
-                    <div class="item slides active"  style="height: 400px">
-                        <div class="slide-1" ></div>
-                        <div class="hero">
-                            <hgroup>
-                                <h1>Начало</h1>
-                                <h4>Подключись и получи 1 месяц безлимитного,<br>скоростного ИНТЕРНЕТА в ПОДАРОК!</h4>
-                            </hgroup>
-                            <button class="btn btn-hero btn-lg" role="button">Кнопка</button>
-                        </div>
-                    </div>
-                    <div class="item slides" style="height: 400px">
-                        <div class="slide-2"></div>
-                        <div class="hero">
-                            <hgroup>
-                                <h1>Приведи друга</h1>
-                                <h4>Приведи к нам своего друга и получи <br>1 месяц безлимитного интернета в подарок.</h4>
-                            </hgroup>
-                            <button class="btn btn-hero btn-lg" role="button">Кнопка</button>
-                        </div>
-                    </div>
-                    <div class="item slides" style="height: 400px">
-                        <div class="slide-3"></div>
-                        <div class="hero">
-                            <hgroup>
-                                <h1>Приятные <br>бонусы</h1>
-                                <h4>Заплати единовременно за 6 месяцев и получи 1 месяц в подарок; <br>Заплати единовременно сразу за 12 месяцев и получи в подарок<br> 2 месяца безлимитного интернета.</h4>
-                            </hgroup>
-                            <button class="btn btn-hero btn-lg" role="button">Кнопка</button>
-                        </div>
+        <div class="col-md-8" style="padding-left: 0px; ">
+                <div id="example-25" class="ma5slider hover-navs hover-dots anim-horizontal center-dots inside-navs inside-dots loop-mode autoplay" data-tempo="3500" style="margin-bottom: 0px;">
+                    <div class="slides">
+                        <a href="#slide-1" data-ma5-anim="anim-fade"><img src="images/Slider/Begin.jpg" alt=""></a>
+                        <a href="#slide-10" data-ma5-anim="anim-fade"><img src="images/Biznes-sdelka.jpg" alt=""></a>
+                        <a href="#slide-2" data-ma5-anim="anim-fade"><img src="images/Contact.jpg" alt=""></a>
+<!--
+                        <a href="#slide-3" data-ma5-anim="anim-fade"><img src="./images/03.jpg" alt=""></a>
+                        <a href="#slide-4"><img src="./images/04.jpg" alt=""></a>
+                        <a href="#slide-5" data-ma5-anim="anim-vertical"><img src="./images/02.jpg" alt=""></a>
+                        <a href="#slide-6" data-ma5-anim="anim-fade"><img src="./images/05.jpg" alt=""></a>
+                        <a href="#slide-7"><img src="./images/06.jpg" alt=""></a>
+                        <a href="#slide-8" data-ma5-anim="anim-vertical"><img src="./images/07.jpg" alt=""></a>
+                        <a href="#slide-9" data-ma5-anim="anim-fade"><img src="./images/08.jpg" alt=""></a>
+-->
+
                     </div>
                 </div>
-            </div>
         </div>
         <div class="col-md-4">
             <div class="card ripe-malinka-gradient form-white">
