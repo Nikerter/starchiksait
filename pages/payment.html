@@ -10,13 +10,26 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.js"></script>
-    <script src="../js/fm.revealator.jquery.min.js"></script>
+<!--    <script src="../js/fm.revealator.jquery.min.js"></script>-->
+    <script src="../js/fm.revealator.jquery.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Lora|Play" rel="stylesheet">
 </head>
 <body>
+<script type="text/javascript">
+	$(document).ready(function(){
+        document.getElementById('opl1').className += " revealator-within";
+        document.getElementById('opl2').className += " revealator-within";
+        document.getElementById('opl3').className += " revealator-within";
+        document.getElementById('opl4').className += " revealator-within";
+        document.getElementById('opl5').className += " revealator-within";
+        document.getElementById('opl6').className += " revealator-within";
+        //исполняемый код после загрузки документа
+    });
+
+</script>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -49,26 +62,35 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+<!--
+    <button onclick="scrollWin()">Click me to scroll horizontally!</button><br><br>
+    <script>
+    function scrollWin() {
+    window.scrollTo(0, 500);
+    }
+    </script>
+-->
+    
     <div class="container-fluid"   style="background:  linear-gradient(to right, #000000, #434343); color: #dff0d8">
         <h1 style="text-align: center; font-family: 'Play', sans-serif;">
             Оплата
         </h1>
         <div class="row">
-        <div class="revealator-zoomin revealator-once">
+        <div class="revealator-zoomin revealator-once revealator-position-below" id="opl1">
         <div class="col-md-4">
             <h3 class="oplata text-center">Яндекс деньги</h3>
             <br>
             <a href="https://money.yandex.ru/new"><img class="center-block opmg" src="../images/payment/yam.png" alt="Яндекс деньги"></a>
         </div>
         </div>
-            <div class="revealator-zoomin revealator-delay1 revealator-once">
+            <div class="revealator-zoomin revealator-delay1 revealator-once" id="opl2">
         <div class="col-md-4">
             <h3 class="oplata text-center">Plat.ru</h3>
             <br>
             <a href="https://plat.ru/?#show_pay(10185, 102)"><img class="center-block opmg" src="../images/payment/platru.png" alt="Яндекс деньги"></a>
         </div>
             </div>
-        <div class="revealator-zoomin revealator-delay2 revealator-once">
+        <div class="revealator-zoomin revealator-delay2 revealator-once" id="opl3">
         <div class="col-md-4">
             <h3 class="oplata text-center">Сбербанк</h3>
             <br>
@@ -78,14 +100,14 @@
     </div>
     <hr>
     <div class="row">
-        <div class="revealator-zoomout revealator-once">
+        <div class="revealator-zoomout revealator-once" id="opl4">
         <div class="col-md-4">
             <h3 class="text-center">Оплата через Терминал</h3>
             <br>
             <img class="center-block bnkmg" src="../images/payment/term2.png" alt="Терминал">
         </div>
         </div>
-            <div class="revealator-zoomout revealator-delay1 revealator-once">
+            <div class="revealator-zoomout revealator-delay1 revealator-once" id="opl5">
         <div class="col-md-4">
             <h3 class="text-center">Оплата через банк</h3>
             <br>
@@ -94,7 +116,7 @@
             </a>
         </div>
             </div>
-                <div class="revealator-zoomout revealator-delay2 revealator-once">
+                <div class="revealator-zoomout revealator-delay2 revealator-once" id="opl6">
         <div class="col-md-4">
             <h3 class="text-center">Оплата через карту</h3>
             <br>
