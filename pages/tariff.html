@@ -20,8 +20,9 @@
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Lora|Play" rel="stylesheet">
+    <link rel="stylesheet" href="../css/checkbox/style.css">
 </head>
 <body>
    
@@ -233,7 +234,12 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                 <div class="thumbnail" style="background: #ffffff;">
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">30</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
-                    <p class="text-center oplata">300 Руб./Месяц<br>Цена фиксированная</p>
+                    <p class="text-center oplata">
+                        300 Руб./Месяц
+                        <br>
+                        Цена фиксированная
+                    </p>
+                    <br>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
                   </div>
@@ -244,9 +250,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">70</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        300 Руб./Месяц
+                        Первые 3 Месяца 250 Руб./Месяц
                         <br>
-                        Цена фиксированная
+                        Далее
+                        <br>
+                        400 Руб./Месяц
                     </p>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
@@ -258,9 +266,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">100</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        300 Руб./Месяц
+                        Первые 3 Месяца 300 Руб./Месяц
                         <br>
-                        Цена фиксированная
+                        Далее
+                        <br>
+                        450 Руб./Месяц
                     </p>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
@@ -272,9 +282,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">150</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        300 Руб./Месяц
+                        Первые 3 Месяца 400 Руб./Месяц
                         <br>
-                        Цена фиксированная
+                        Далее
+                        <br>
+                        550 Руб./Месяц
                     </p>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
@@ -286,9 +298,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">200</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        300 Руб./Месяц
+                        Первые 3 Месяца 500 Руб./Месяц
                         <br>
-                        Цена фиксированная
+                        Далее 
+                        <br>
+                        650 Руб./Месяц
                     </p>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#300tar">Подключить</button></p>
@@ -408,12 +422,17 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                                             <input name="mail" type="email" class="form-control center-block" style="width: 80%" id="email" placeholder="mail@mail.mail">
                                          </div>-->
                                      </div>
-                                  </div>
-                                  
+                                  </div>  
+                <!-- List group -->
+                       
+                        
+               
+
                                   <div class="row">
                                       <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
                                       <br>
-                                      <div class="btn-group center-block" data-toggle="buttons">
+                                      
+                                      <div class="center-block" >
                                           <div class="col-md-4 center-block text-center">
 <!--
                                               <input type="checkbox" style="height: 200px; width: 200px">
@@ -425,12 +444,25 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                                                     <hr>
                                                     <label for="usluga1" class="text-center" style="font-size: 25px">100 Рублей</label>
 -->
+                                                    
                                                     <h3>Роутер</h3>
                                                     <hr>
                                                     <h3>100 рублей</h3>
+                                                    <br>
+                                                    <div class="toggle-button toggle-button--aava">
+                                                        <input id="toggleButton11" type="checkbox" name="usluga1"> 
+                                                        <label for="toggleButton11" data-on-text="On" data-off-text="Off"></label>
+                                                        <div class="toggle-button__icon">
+                                                            <input hidden="hidden" type="text" name="uslugcost1" value="100">
+                                                            <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
+                                                        </div>
+                                                    </div>
+                                                   
+<!--
                                                     <input class="usluga-check" type="checkbox" name="usluga1">                   
                                                     <input hidden="hidden" type="text" name="uslugcost1" value="100">
                                                     <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
+-->
                                           </div>
                                           <div class="col-md-4 text-center">
 <!--
@@ -446,10 +478,22 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                                                   <h3>Антивирус</h3>
                                                   <hr>
                                                   <h3>99 рублей</h3>
+                                                  <br>
+                                                  <div class="toggle-button toggle-button--aava">
+                                                        <input id="toggleButton12" type="checkbox" name="usluga2"> 
+                                                        <label for="toggleButton12" data-on-text="On" data-off-text="Off"></label>
+                                                        <div class="toggle-button__icon">
+                                                            <input hidden="hidden" type="text" name="uslugcost2" value="99">
+                                                            <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+                                                        </div>
+                                                  </div>
+                                                  
+<!--
                                                   <input class="usluga-check" type="checkbox" name="usluga2">
                                                                                                     
                                                   <input hidden="hidden" type="text" name="uslugcost2" value="99">
                                                   <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+-->
                                           </div>
                                           <div class="col-md-4 text-center">
 <!--
@@ -460,10 +504,22 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                                                     <h3>PLC</h3>
                                                     <hr>
                                                     <h3>89 рублей</h3>
+                                                    <br>
+                                                    <div class="toggle-button toggle-button--aava">
+                                                        <input id="toggleButton13" type="checkbox" name="usluga3"> 
+                                                        <label for="toggleButton13" data-on-text="On" data-off-text="Off"></label>
+                                                        <div class="toggle-button__icon">
+                                                            <input hidden="hidden" type="text" name="uslugcost3" value="89">
+                                                            <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
+                                                        </div>
+                                                    </div>
+                                                    
+<!--
                                                     <input class="usluga-check" type="checkbox" name="usluga3">
                                                     
                                                     <input hidden="hidden" type="text" name="uslugcost3" value="89">
                                                     <input hidden="hidden" type="text" name="usluganame3" value="PLC">
+-->
                                           </div>
                                       </div>
                                       <input hidden="hidden" type="text" name="tariffcost" value="300">
@@ -882,7 +938,7 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                         }
                     })();
                 </script>
-                
+                <script  src="../js/check.js"></script>
     <footer class="myfooter">
         <div class="container-fluid">
             <div class="row">
