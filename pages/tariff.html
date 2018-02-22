@@ -198,34 +198,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                 margin-left: 0px;
             }
         }
-/*
-        @media (max-width: 600px){
-            .mbs{
-                font-size: 40px;
-            }
-        }
-*/
+
         
     </style>
-<!--
-        <button class="btn-lg" onclick="wiht()">
-            экран
-        </button>
--->
-    <div class="row" style="background:#1B1A1C; padding-top: 10%; padding-bottom: 10%">
-        
-        
-<!--
-        <script>
-            function wiht() {
-                width=screen.width; // ширина  
-                height=screen.height; // высота  
-                alert ("Разрешение экрана: "+width+"x"+height);                
-            }
-        </script> 
--->
-        
 
+    <div class="row" style="background:#1B1A1C; padding-top: 10%; padding-bottom: 10%">
         <div class="col-md-1">
         </div>
         <div class="col-md-2">
@@ -290,7 +267,7 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#550tar">Подключить</button></p>
                   </div>
             </div>
-        </div>
+        </div>        
         <div class="col-md-2">
             <div class="thumbnail" style="background: #ffffff;">
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">200</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
@@ -309,634 +286,558 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
         </div>
         <div class="col-md-1"></div>
     </div>
-    <div class="row trf">
-                    <div class="col-md-4">
-                        <img class="spdmtr center-block img-circle" src="../images/speed30.png" alt="30 Мбит/с">
-                        <p class="spdmtrtxt text-center"><strong>30 Мбит/с</strong></p>
-                        <p class="text-center oplata">
-                            300 Руб./Месяц
-                            <br>
-                            Цена фиксированная
-                        </p>
-                        <br>
-                        <button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#300tar">
-                        Подключить
-                        </button>
+    
+    <!-- Модальніе вікна -->
+        
+    <div class="modal fade" id="300tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: #1B1A1C; color: azure">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h1 class="modal-title text-center" id="myModalLabel">Подключение тарифа</h1>
+          </div>
+          <div class="modal-body">    
+            <div class="row text-center">
+              <div class="col-md-12">
+                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+              </div>                                     
+            </div>                             
 
-                        <div class="modal fade" id="300tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content" style="background: #1B1A1C; color: azure">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h1 class="modal-title text-center" id="myModalLabel">Подключение тарифа</h1>
-                              </div>
-                              <div class="modal-body">
-<!--
-                              <div class="row text-center">
-                                  <h2>Вы собираетесь подключить тариф стоимостью<strong> 300 Руб./Месяц </strong></h2>
-                              </div>
-                              <div class="row">
-                                  <form action="../scripts/tariff.php" method="post">
-                                     <div class="col-md-6" style="margin-top:20%">
-                                         <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;" >Мбит/с</p></h1>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <h2  class="text-center">Необходимо указать свои контактные данные</h2>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Номер телефона*</label>
-                                            <input name="tel" type="tel" class="form-control" id="tel" placeholder="+70007775599" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Адрес*</label>
-                                            <input name="adres" type="text" class="form-control" id="adres" placeholder="Примерная 17 кв.165" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Эл. почта</label>
-                                            <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
-                                         </div>
-                                     </div>
-                                  </form>
-                              </div>
--->
-                             <div class="row text-center">
-                                  <div class="col-md-12">
-                                      <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
-                                  </div>                                     
-                             </div>
-<!--
-                              <div class="row" style="margin-top: 100px;">
-                                  <div class="col-md-12 text-center">
-                                      <h2>Вы собираетесь подключить тариф стоимостью<strong> 300 Руб./Месяц </strong></h2>
-                                  </div>
-                              </div>
--->
-                             
-                              
-                              <form action="../scripts/tariff.php" method="post">
-                                  <div class="row" style="margin-top: 75px;">
-                                    <hr>
-                                     <div class="col-md-12 text-center">
-                                        <span class="input input--ruri">
-                                            <input class="input__field input__field--ruri" type="text" name="tel" type="tel" id="tel" required />
-                                            <label class="input__label input__label--ruri" for="input-26">
-                                                <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Номер телефона*</span>
-                                            </label>
-                                        </span>
-                                        <br>
-                                        <br>
-                                        
-                                        <span class="input input--ruri">
-                                            <input class="input__field input__field--ruri" type="text" name="adres" type="text" id="input-27" required />
-                                            <label class="input__label input__label--ruri" for="input-27">
-                                                <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Адрес*</span>
-                                            </label>
-                                        </span>
-                                        <br>
-                                        <br>
-                                        <span class="input input--ruri">
-                                            <input class="input__field input__field--ruri" type="text" id="input-28" name="mail" type="email" />
-                                            <label class="input__label input__label--ruri" for="input-28">
-                                                <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Электронная почта</span>
-                                            </label>
-                                        </span>
-                                        <hr>
-                                         
-                                          
-                                        <!-- <h2  class="text-center">Необходимо указать свои контактные данные</h2>
-                                         <br>
-                                         <div class="form-group">
-<!--                                            <label for="exampleInputEmail1">Номер телефона*</label>
-                                            <h3 class="text-center">Номер телефона*</h3>
-                                            <input name="tel" type="tel" class="form-control center-block" style="width: 80%" id="tel" placeholder="+70007775599" required>
-                                         </div>
-                                         <div class="form-group">
-<!--                                            <label for="exampleInputEmail1">Адрес*</label>
-                                            <h3 class="text-center">Адрес*</h3>
-                                            <input name="adres" type="text" class="form-control center-block" style="width: 80%" id="adres" placeholder="Примерная 17 кв.165" required>
-                                         </div>
-                                         <div class="form-group">
-<!--                                            <label for="exampleInputEmail1">Эл. почта</label>
-                                            <h3 class="text-center">Электронная почта</h3>
-                                            <input name="mail" type="email" class="form-control center-block" style="width: 80%" id="email" placeholder="mail@mail.mail">
-                                         </div>-->
-                                     </div>
-                                  </div>  
-                <!-- List group -->
-                       
-                        
-               
+            <form action="../scripts/tariff.php" method="post">
+              <div class="row" style="margin-top: 75px;">
+                <hr>
+                 <div class="col-md-12 text-center">
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="tel" type="tel" id="11" required />
+                        <label class="input__label input__label--ruri" for="input-11">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Номер телефона*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
 
-                                  <div class="row">
-                                      <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
-                                      <br>
-                                      
-                                      <div class="center-block" >
-                                          <div class="col-md-4 center-block text-center">
-<!--
-                                              <input type="checkbox" style="height: 200px; width: 200px">
-                                              <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 Руб..
-                                              </button>
--->
-<!--
-                                                    <label for="usluga1" class="text-center" style="font-size: 25px">Роутер</label>
-                                                    <hr>
-                                                    <label for="usluga1" class="text-center" style="font-size: 25px">100 Рублей</label>
--->
-                                                    
-                                                    <h3>Роутер</h3>
-                                                    <hr>
-                                                    <h3>100 рублей</h3>
-                                                    <br>
-                                                    <div class="toggle-button toggle-button--aava">
-                                                        <input id="toggleButton11" type="checkbox" name="usluga1"> 
-                                                        <label for="toggleButton11" data-on-text="On" data-off-text="Off"></label>
-                                                        <div class="toggle-button__icon">
-                                                            <input hidden="hidden" type="text" name="uslugcost1" value="100">
-                                                            <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
-                                                        </div>
-                                                    </div>
-                                                   
-<!--
-                                                    <input class="usluga-check" type="checkbox" name="usluga1">                   
-                                                    <input hidden="hidden" type="text" name="uslugcost1" value="100">
-                                                    <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
--->
-                                          </div>
-                                          <div class="col-md-4 text-center">
-<!--
-                                              <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 Руб..
-                                              </button>
-                                                  <input hidden="hidden"  type="checkbox" name="usluga2">
--->
-<!--
-                                                  <label for="usluga2" class="text-center" style="font-size: 25px">Антивирус</label> 
-                                                  <hr>
-                                                  <label for="usluga2" class="text-center" style="font-size: 25px">99 рублей</label> 
--->
-                                                  <h3>Антивирус</h3>
-                                                  <hr>
-                                                  <h3>99 рублей</h3>
-                                                  <br>
-                                                  <div class="toggle-button toggle-button--aava">
-                                                        <input id="toggleButton12" type="checkbox" name="usluga2"> 
-                                                        <label for="toggleButton12" data-on-text="On" data-off-text="Off"></label>
-                                                        <div class="toggle-button__icon">
-                                                            <input hidden="hidden" type="text" name="uslugcost2" value="99">
-                                                            <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
-                                                        </div>
-                                                  </div>
-                                                  
-<!--
-                                                  <input class="usluga-check" type="checkbox" name="usluga2">
-                                                                                                    
-                                                  <input hidden="hidden" type="text" name="uslugcost2" value="99">
-                                                  <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
--->
-                                          </div>
-                                          <div class="col-md-4 text-center">
-<!--
-                                                <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 Руб..
-                                                </button>
-                                                    <input hidden="hidden" type="checkbox" name="usluga3">
--->
-                                                    <h3>PLC</h3>
-                                                    <hr>
-                                                    <h3>89 рублей</h3>
-                                                    <br>
-                                                    <div class="toggle-button toggle-button--aava">
-                                                        <input id="toggleButton13" type="checkbox" name="usluga3"> 
-                                                        <label for="toggleButton13" data-on-text="On" data-off-text="Off"></label>
-                                                        <div class="toggle-button__icon">
-                                                            <input hidden="hidden" type="text" name="uslugcost3" value="89">
-                                                            <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
-                                                        </div>
-                                                    </div>
-                                                    
-<!--
-                                                    <input class="usluga-check" type="checkbox" name="usluga3">
-                                                    
-                                                    <input hidden="hidden" type="text" name="uslugcost3" value="89">
-                                                    <input hidden="hidden" type="text" name="usluganame3" value="PLC">
--->
-                                          </div>
-                                      </div>
-                                      <input hidden="hidden" type="text" name="tariffcost" value="300">
-                                  </div>
-                                  <hr>
-                                  <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
-                              </form>
-                              </div>
-<!--
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                              </div>
--->
-                            </div>
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="adres" type="text" id="input-12" required />
+                        <label class="input__label input__label--ruri" for="input-12">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Адрес*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" id="input-13" name="mail" type="email" />
+                        <label class="input__label input__label--ruri" for="input-13">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Электронная почта</span>
+                        </label>
+                    </span>
+                    <hr>
+                 </div>
+              </div>
+
+              <div class="row">
+                  <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
+                  <br>
+                  <div class="center-block" >
+                      <div class="col-md-4 center-block text-center">
+                      <h3>Роутер</h3>
+                      <hr>
+                      <h3>100 рублей</h3>
+                      <br>
+                      <div class="toggle-button toggle-button--aava">
+                          <input id="toggleButton11" type="checkbox" name="usluga1"> 
+                          <label for="toggleButton11" data-on-text="On" data-off-text="Off"></label>
+                          <div class="toggle-button__icon">
+                             <input hidden="hidden" type="text" name="uslugcost1" value="100">
+                             <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
                           </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <img class="spdmtr center-block img-circle" src="../images/speed70.png" alt="70 Мбит/с">
-                        <p class="spdmtrtxt text-center"><strong>70 Мбит/с</strong></p>
-                        <p class="text-center oplata">
-                            Первые 3 Месяца 250 Руб./Месяц<br>
-                            Далее 400 Руб./Месяц
-                        </p>
-                        <br>
-                        <button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#400tar">
-                        Подключить
-                        </button>
-                
-                        <div class="modal fade" id="400tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Подключение 70 Мбит/с</h4>
-                              </div>
-                              <div class="modal-body">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <h2>Вы собираетесь подключить тариф стоимостью <br><br><strong> 400 Руб./Месяц </strong></h2>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <img class="spdmtr center-block img-circle" src="../images/speed70.png" alt="70 Мбит/с">
-                                  </div>
-                                   <div class="text-center"><h3>(250 Руб./Месяц первые 3 Месяца)</h3></div>
-                              </div>
-
-                              <hr>
-                              <form action="../scripts/tariff.php" method="post">
-                                  <div class="row">
-                                     <div class="col-md-12">   
-                                         <h2  class="text-center">Необходимо указать свои контактные данные</h2>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Номер телефона*</label>
-                                            <input name="tel" type="tel" class="form-control" id="tel" placeholder="+70007775599" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Адрес*</label>
-                                            <input name="adres" type="text" class="form-control" id="adres" placeholder="Примерная 17 кв.165" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Эл. почта</label>
-                                            <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
-                                         </div>
-                                     </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <h2 class="text-center">Также вы можете подключить дополнительные услуги:</h2>
-                                      <div class="btn-group center-block" data-toggle="buttons">
-                                          <div class="col-md-4 center-block">
-                                              <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga1">
-                                                    <input hidden="hidden" type="text" name="uslugcost1" value="100">
-                                                    <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 ">
-                                              <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 Руб..
-                                                  <input hidden="hidden"  type="checkbox" name="usluga2">
-                                                  <input hidden="hidden" type="text" name="uslugcost2" value="99">
-                                                  <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 center-block">
-                                                <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga3">
-                                                    <input hidden="hidden" type="text" name="uslugcost3" value="89">
-                                                    <input hidden="hidden" type="text" name="usluganame3" value="PLC">
-                                                </button>
-                                          </div>
-                                      </div>
-                                      <input hidden="hidden" type="text" name="tariffcost" value="400">
-                                  </div>
-                                  <hr>
-                                  <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
-                              </form>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                              </div>
-                            </div>
+                      </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                          <h3>Антивирус</h3>
+                          <hr>
+                          <h3>99 рублей</h3>
+                          <br>
+                          <div class="toggle-button toggle-button--aava">
+                                <input id="toggleButton12" type="checkbox" name="usluga2"> 
+                                <label for="toggleButton12" data-on-text="On" data-off-text="Off"></label>
+                                <div class="toggle-button__icon">
+                                    <input hidden="hidden" type="text" name="uslugcost2" value="99">
+                                    <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+                                </div>
                           </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="spdmtr center-block img-circle" src="../images/speed100.png" alt="100 Мбит/с">
-                        <p class="spdmtrtxt text-center"><strong>100 Мбит/с</strong></p>
-                        <p class="text-center oplata">
-                            Первые 3 Месяца 300 Руб./Месяц<br>
-                            Далее 450 Руб./Месяц
-                        </p>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <h3>PLC</h3>
+                        <hr>
+                        <h3>89 рублей</h3>
                         <br>
-                        <button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#450tar">
-                        Подключить
-                        </button>
-                        
-                        <div class="modal fade" id="450tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Подключение 100 Мбит/с</h4>
-                              </div>
-                              <div class="modal-body">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <h2>Вы собираетесь подключить тариф стоимостью <br> <br><strong> 450 Руб./Месяц </strong></h2>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <img class="spdmtr center-block img-circle" src="../images/speed100.png" alt="100 Мбит/с">
-                                  </div>
-                                  <div class="text-center"><h3>(300 Руб./Месяц первые 3 Месяца)</h3></div>
-                              </div>
-
-                              <hr>
-                              <form action="../scripts/tariff.php" method="post">
-                                  <div class="row">
-                                     <div class="col-md-12">   
-                                         <h2  class="text-center">Необходимо указать свои контактные данные</h2>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Номер телефона*</label>
-                                            <input name="tel" type="tel" class="form-control" id="tel" placeholder="+70007775599" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Адрес*</label>
-                                            <input name="adres" type="text" class="form-control" id="adres" placeholder="Примерная 17 кв.165" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Эл. почта</label>
-                                            <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
-                                         </div>
-                                     </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <h2 class="text-center">Также вы можете подключить дополнительные услуги:</h2>
-                                      <div class="btn-group center-block" data-toggle="buttons">
-                                          <div class="col-md-4 center-block">
-                                              <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga1">
-                                                    <input hidden="hidden" type="text" name="uslugcost1" value="100">
-                                                    <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 ">
-                                              <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 Руб..
-                                                  <input hidden="hidden"  type="checkbox" name="usluga2">
-                                                  <input hidden="hidden" type="text" name="uslugcost2" value="99">
-                                                  <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 center-block">
-                                                <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga3">
-                                                    <input hidden="hidden" type="text" name="uslugcost3" value="89">
-                                                    <input hidden="hidden" type="text" name="usluganame3" value="PLC">
-                                                </button>
-                                          </div>
-                                      </div>
-                                      <input hidden="hidden" type="text" name="tariffcost" value="450">
-                                  </div>
-                                  <hr>
-                                  <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
-                              </form>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                              </div>
+                        <div class="toggle-button toggle-button--aava">
+                            <input id="toggleButton13" type="checkbox" name="usluga3"> 
+                            <label for="toggleButton13" data-on-text="On" data-off-text="Off"></label>
+                            <div class="toggle-button__icon">
+                                <input hidden="hidden" type="text" name="uslugcost3" value="89">
+                                <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
                             </div>
-                          </div>
                         </div>
-                        
-                        
-                    </div>
-                </div>
-                <div class="row trf">
-                   <div class="col-md-2"></div>
-                    <div class="col-md-4">
-                        <img class="spdmtr center-block img-circle" src="../images/speed150.png" alt="150 Мбит/с">
-                        <p class="spdmtrtxt text-center"><strong>150 Мбит/с</strong></p>
-                        <p class="text-center oplata">
-                            Первые 3 Месяца 400 Руб./Месяц<br>
-                            Далее 550 Руб./Месяц
-                        </p>
+                      </div>
+                  </div>
+                  <input hidden="hidden" type="text" name="tariffcost" value="300">
+              </div>
+              <hr>
+              <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="400tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: #1B1A1C; color: azure">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h1 class="modal-title text-center" id="myModalLabel">Подключение тарифа</h1>
+          </div>
+          <div class="modal-body">    
+            <div class="row text-center">
+              <div class="col-md-12">
+                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">70</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+              </div>                                     
+            </div>                             
+
+            <form action="../scripts/tariff.php" method="post">
+              <div class="row" style="margin-top: 75px;">
+                <hr>
+                 <div class="col-md-12 text-center">
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="tel" type="tel" id="input-21" required />
+                        <label class="input__label input__label--ruri" for="input-21">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Номер телефона*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="adres" type="text" id="input-22" required />
+                        <label class="input__label input__label--ruri" for="input-22">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Адрес*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" id="input-23" name="mail" type="email" />
+                        <label class="input__label input__label--ruri" for="input-23">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Электронная почта</span>
+                        </label>
+                    </span>
+                    <hr>
+                 </div>
+              </div>
+
+              <div class="row">
+                  <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
+                  <br>
+                  <div class="center-block" >
+                      <div class="col-md-4 center-block text-center">
+                      <h3>Роутер</h3>
+                      <hr>
+                      <h3>100 рублей</h3>
+                      <br>
+                          <div class="toggle-button toggle-button--aava">
+                              <input id="toggleButton21" type="checkbox" name="usluga1"> 
+                              <label for="toggleButton21" data-on-text="On" data-off-text="Off"></label>
+                              <div class="toggle-button__icon">
+                                 <input hidden="hidden" type="text" name="uslugcost1" value="100">
+                                 <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                          <h3>Антивирус</h3>
+                          <hr>
+                          <h3>99 рублей</h3>
+                          <br>
+                              <div class="toggle-button toggle-button--aava">
+                                    <input id="toggleButton22" type="checkbox" name="usluga2"> 
+                                    <label for="toggleButton22" data-on-text="On" data-off-text="Off"></label>
+                                    <div class="toggle-button__icon">
+                                        <input hidden="hidden" type="text" name="uslugcost2" value="99">
+                                        <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+                                    </div>
+                              </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <h3>PLC</h3>
+                        <hr>
+                        <h3>89 рублей</h3>
                         <br>
-                        <button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#550tar">
-                        Подключить
-                        </button>
-                        
-                        <div class="modal fade" id="550tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Подключение 150 Мбит/с</h4>
-                              </div>
-                              <div class="modal-body">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <h2>Вы собираетесь подключить тариф стоимостью <br> <br><strong> 550 Руб./Месяц </strong></h2>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <img class="spdmtr center-block img-circle" src="../images/speed150.png" alt="150 Мбит/с">
-                                  </div>
-                                  <div class="text-center"><h3>(400 Руб./Месяц первые 3 Месяца)</h3></div>
-                              </div>
-
-                              <hr>
-                              <form action="../scripts/tariff.php" method="post">
-                                  <div class="row">
-                                     <div class="col-md-12">   
-                                         <h2  class="text-center">Необходимо указать свои контактные данные</h2>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Номер телефона*</label>
-                                            <input name="tel" type="tel" class="form-control" id="tel" placeholder="+70007775599" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Адрес*</label>
-                                            <input name="adres" type="text" class="form-control" id="adres" placeholder="Примерная 17 кв.165" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Эл. почта</label>
-                                            <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
-                                         </div>
-                                     </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <h2 class="text-center">Также вы можете подключить дополнительные услуги:</h2>
-                                      <div class="btn-group center-block" data-toggle="buttons">
-                                          <div class="col-md-4 center-block">
-                                              <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga1">
-                                                    <input hidden="hidden" type="text" name="uslugcost1" value="100">
-                                                    <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 ">
-                                              <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 Руб..
-                                                  <input hidden="hidden"  type="checkbox" name="usluga2">
-                                                  <input hidden="hidden" type="text" name="uslugcost2" value="99">
-                                                  <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 center-block">
-                                                <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga3">
-                                                    <input hidden="hidden" type="text" name="uslugcost3" value="89">
-                                                    <input hidden="hidden" type="text" name="usluganame3" value="PLC">
-                                                </button>
-                                          </div>
-                                      </div>
-                                      <input hidden="hidden" type="text" name="tariffcost" value="550">
-                                  </div>
-                                  <hr>
-                                  <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
-                              </form>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                              </div>
+                        <div class="toggle-button toggle-button--aava">
+                            <input id="toggleButton23" type="checkbox" name="usluga3"> 
+                            <label for="toggleButton23" data-on-text="On" data-off-text="Off"></label>
+                            <div class="toggle-button__icon">
+                                <input hidden="hidden" type="text" name="uslugcost3" value="89">
+                                <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
                             </div>
-                          </div>
                         </div>
-                        
-                        
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <img class="spdmtr center-block img-circle" src="../images/speed200.png" alt="200 Мбит/с">
-                        <p class="spdmtrtxt text-center"><strong>200 Мбит/с</strong></p>
-                        <p class="text-center oplata">
-                            Первые 3 Месяца 500 Руб./Месяц<br>
-                            Далее 650 Руб./Месяц
-                        </p>
+                      </div>
+                  </div>
+                  <input hidden="hidden" type="text" name="tariffcost" value="400">
+              </div>
+              <hr>
+              <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="450tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: #1B1A1C; color: azure">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h1 class="modal-title text-center" id="myModalLabel">Подключение тарифа</h1>
+          </div>
+          <div class="modal-body">    
+            <div class="row text-center">
+              <div class="col-md-12">
+                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">100</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+              </div>                                     
+            </div>                             
+
+            <form action="../scripts/tariff.php" method="post">
+              <div class="row" style="margin-top: 75px;">
+                <hr>
+                 <div class="col-md-12 text-center">
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="tel" type="tel" id="input-31" required />
+                        <label class="input__label input__label--ruri" for="input-31">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Номер телефона*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="adres" type="text" id="input-32" required />
+                        <label class="input__label input__label--ruri" for="input-32">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Адрес*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" id="input-33" name="mail" type="email" />
+                        <label class="input__label input__label--ruri" for="input-33">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Электронная почта</span>
+                        </label>
+                    </span>
+                    <hr>
+                 </div>
+              </div>
+
+              <div class="row">
+                  <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
+                  <br>
+                  <div class="center-block" >
+                      <div class="col-md-4 center-block text-center">
+                      <h3>Роутер</h3>
+                      <hr>
+                      <h3>100 рублей</h3>
+                      <br>
+                          <div class="toggle-button toggle-button--aava">
+                              <input id="toggleButton31" type="checkbox" name="usluga1"> 
+                              <label for="toggleButton31" data-on-text="On" data-off-text="Off"></label>
+                              <div class="toggle-button__icon">
+                                 <input hidden="hidden" type="text" name="uslugcost1" value="100">
+                                 <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                          <h3>Антивирус</h3>
+                          <hr>
+                          <h3>99 рублей</h3>
+                          <br>
+                              <div class="toggle-button toggle-button--aava">
+                                    <input id="toggleButton32" type="checkbox" name="usluga2"> 
+                                    <label for="toggleButton32" data-on-text="On" data-off-text="Off"></label>
+                                    <div class="toggle-button__icon">
+                                        <input hidden="hidden" type="text" name="uslugcost2" value="99">
+                                        <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+                                    </div>
+                              </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <h3>PLC</h3>
+                        <hr>
+                        <h3>89 рублей</h3>
                         <br>
-                        <button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#650tar">
-                        Подключить
-                        </button>
-                        
-                         <div class="modal fade" id="650tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Подключение 200 Мбит/с</h4>
-                              </div>
-                              <div class="modal-body">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <h2>Вы собираетесь подключить тариф стоимостью <br> <br><strong> 650 Руб./Месяц </strong></h2>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <img class="spdmtr center-block img-circle" src="../images/speed200.png" alt="200 Мбит/с">
-                                  </div>
-                                  <div class="text-center"><h3>(500 Руб./Месяц первые 3 Месяца)</h3></div>
-                              </div>
-
-                              <hr>
-                              <form action="../scripts/tariff.php" method="post">
-                                  <div class="row">
-                                     <div class="col-md-12">   
-                                         <h2  class="text-center">Необходимо указать свои контактные данные</h2>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Номер телефона*</label>
-                                            <input name="tel" type="tel" class="form-control" id="tel" placeholder="+70007775599" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Адрес*</label>
-                                            <input name="adres" type="text" class="form-control" id="adres" placeholder="Примерная 17 кв.165" required>
-                                         </div>
-                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Эл. почта</label>
-                                            <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
-                                         </div>
-                                     </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <h2 class="text-center">Также вы можете подключить дополнительные услуги:</h2>
-                                      <div class="btn-group center-block" data-toggle="buttons">
-                                          <div class="col-md-4 center-block">
-                                              <button class="btn btn-primary center-block usluga-check sltbg">Роутер <br> 100 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga1">
-                                                    <input hidden="hidden" type="text" name="uslugcost1" value="100">
-                                                    <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 ">
-                                              <button class="btn btn-primary usluga-check sltbg center-block">Антивирус <br> 99 Руб..
-                                                  <input hidden="hidden"  type="checkbox" name="usluga2">
-                                                  <input hidden="hidden" type="text" name="uslugcost2" value="99">
-                                                  <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
-                                              </button>
-                                          </div>
-                                          <div class="col-md-4 center-block">
-                                                <button class="btn btn-primary center-block usluga-check sltbg">PLC <br> 89 Руб..
-                                                    <input hidden="hidden"  type="checkbox" name="usluga3">
-                                                    <input hidden="hidden" type="text" name="uslugcost3" value="89">
-                                                    <input hidden="hidden" type="text" name="usluganame3" value="PLC">
-                                                </button>
-                                          </div>
-                                      </div>
-                                      <input hidden="hidden" type="text" name="tariffcost" value="650">
-                                  </div>
-                                  <hr>
-                                  <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
-                              </form>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                              </div>
+                        <div class="toggle-button toggle-button--aava">
+                            <input id="toggleButton33" type="checkbox" name="usluga3"> 
+                            <label for="toggleButton33" data-on-text="On" data-off-text="Off"></label>
+                            <div class="toggle-button__icon">
+                                <input hidden="hidden" type="text" name="uslugcost3" value="89">
+                                <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
                             </div>
-                          </div>
                         </div>
-                        
-                        
-                    </div>
-                </div>
-                
-                <script>
-                    (function() {
-                        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-                        if (!String.prototype.trim) {
-                            (function() {
-                                // Make sure we trim BOM and NBSP
-                                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-                                String.prototype.trim = function() {
-                                    return this.replace(rtrim, '');
-                                };
-                            })();
-                        }
+                      </div>
+                  </div>
+                  <input hidden="hidden" type="text" name="tariffcost" value="450">
+              </div>
+              <hr>
+              <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="550tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: #1B1A1C; color: azure">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h1 class="modal-title text-center" id="myModalLabel">Подключение тарифа</h1>
+          </div>
+          <div class="modal-body">    
+            <div class="row text-center">
+              <div class="col-md-12">
+                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">150</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+              </div>                                     
+            </div>                             
 
-                        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-                            // in case the input is already filled..
-                            if( inputEl.value.trim() !== '' ) {
-                                classie.add( inputEl.parentNode, 'input--filled' );
-                            }
+            <form action="../scripts/tariff.php" method="post">
+              <div class="row" style="margin-top: 75px;">
+                <hr>
+                 <div class="col-md-12 text-center">
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="tel" type="tel" id="input-41" required />
+                        <label class="input__label input__label--ruri" for="input-41">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Номер телефона*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
 
-                            // events:
-                            inputEl.addEventListener( 'focus', onInputFocus );
-                            inputEl.addEventListener( 'blur', onInputBlur );
-                        } );
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="adres" type="text" id="input-42" required />
+                        <label class="input__label input__label--ruri" for="input-42">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Адрес*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" id="input-43" name="mail" type="email" />
+                        <label class="input__label input__label--ruri" for="input-43">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Электронная почта</span>
+                        </label>
+                    </span>
+                    <hr>
+                 </div>
+              </div>
 
-                        function onInputFocus( ev ) {
-                            classie.add( ev.target.parentNode, 'input--filled' );
-                        }
+              <div class="row">
+                  <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
+                  <br>
+                  <div class="center-block" >
+                      <div class="col-md-4 center-block text-center">
+                      <h3>Роутер</h3>
+                      <hr>
+                      <h3>100 рублей</h3>
+                      <br>
+                          <div class="toggle-button toggle-button--aava">
+                              <input id="toggleButton41" type="checkbox" name="usluga1"> 
+                              <label for="toggleButton41" data-on-text="On" data-off-text="Off"></label>
+                              <div class="toggle-button__icon">
+                                 <input hidden="hidden" type="text" name="uslugcost1" value="100">
+                                 <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                          <h3>Антивирус</h3>
+                          <hr>
+                          <h3>99 рублей</h3>
+                          <br>
+                              <div class="toggle-button toggle-button--aava">
+                                    <input id="toggleButton42" type="checkbox" name="usluga2"> 
+                                    <label for="toggleButton42" data-on-text="On" data-off-text="Off"></label>
+                                    <div class="toggle-button__icon">
+                                        <input hidden="hidden" type="text" name="uslugcost2" value="99">
+                                        <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+                                    </div>
+                              </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <h3>PLC</h3>
+                        <hr>
+                        <h3>89 рублей</h3>
+                        <br>
+                        <div class="toggle-button toggle-button--aava">
+                            <input id="toggleButton43" type="checkbox" name="usluga3"> 
+                            <label for="toggleButton43" data-on-text="On" data-off-text="Off"></label>
+                            <div class="toggle-button__icon">
+                                <input hidden="hidden" type="text" name="uslugcost3" value="89">
+                                <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <input hidden="hidden" type="text" name="tariffcost" value="550">
+              </div>
+              <hr>
+              <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="650tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: #1B1A1C; color: azure">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h1 class="modal-title text-center" id="myModalLabel">Подключение тарифа</h1>
+          </div>
+          <div class="modal-body">    
+            <div class="row text-center">
+              <div class="col-md-12">
+                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">200</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+              </div>                                     
+            </div>                             
 
-                        function onInputBlur( ev ) {
-                            if( ev.target.value.trim() === '' ) {
-                                classie.remove( ev.target.parentNode, 'input--filled' );
-                            }
-                        }
-                    })();
-                </script>
-                <script  src="../js/check.js"></script>
+            <form action="../scripts/tariff.php" method="post">
+              <div class="row" style="margin-top: 75px;">
+                <hr>
+                 <div class="col-md-12 text-center">
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="tel" type="tel" id="input-51" required />
+                        <label class="input__label input__label--ruri" for="input-51">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Номер телефона*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" name="adres" type="text" id="input-42" required />
+                        <label class="input__label input__label--ruri" for="input-52">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Адрес*</span>
+                        </label>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="input input--ruri">
+                        <input class="input__field input__field--ruri" type="text" id="input-43" name="mail" type="email" />
+                        <label class="input__label input__label--ruri" for="input-53">
+                            <span class="input__label-content input__label-content--ruri" style="color: azure; font-size: 20px;">Электронная почта</span>
+                        </label>
+                    </span>
+                    <hr>
+                 </div>
+              </div>
+
+              <div class="row">
+                  <h2 class="text-center">Дополнителные услуги доступные к подключению:</h2>
+                  <br>
+                  <div class="center-block" >
+                      <div class="col-md-4 center-block text-center">
+                      <h3>Роутер</h3>
+                      <hr>
+                      <h3>100 рублей</h3>
+                      <br>
+                          <div class="toggle-button toggle-button--aava">
+                              <input id="toggleButton51" type="checkbox" name="usluga1"> 
+                              <label for="toggleButton51" data-on-text="On" data-off-text="Off"></label>
+                              <div class="toggle-button__icon">
+                                 <input hidden="hidden" type="text" name="uslugcost1" value="100">
+                                 <input hidden="hidden" type="text" name="usluganame1" value="Роутер"> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                          <h3>Антивирус</h3>
+                          <hr>
+                          <h3>99 рублей</h3>
+                          <br>
+                              <div class="toggle-button toggle-button--aava">
+                                    <input id="toggleButton52" type="checkbox" name="usluga2"> 
+                                    <label for="toggleButton52" data-on-text="On" data-off-text="Off"></label>
+                                    <div class="toggle-button__icon">
+                                        <input hidden="hidden" type="text" name="uslugcost2" value="99">
+                                        <input hidden="hidden" type="text" name="usluganame2" value="Антивирус"> 
+                                    </div>
+                              </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <h3>PLC</h3>
+                        <hr>
+                        <h3>89 рублей</h3>
+                        <br>
+                        <div class="toggle-button toggle-button--aava">
+                            <input id="toggleButton53" type="checkbox" name="usluga3"> 
+                            <label for="toggleButton53" data-on-text="On" data-off-text="Off"></label>
+                            <div class="toggle-button__icon">
+                                <input hidden="hidden" type="text" name="uslugcost3" value="89">
+                                <input hidden="hidden" type="text" name="usluganame3" value="PLC"> 
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <input hidden="hidden" type="text" name="tariffcost" value="650">
+              </div>
+              <hr>
+              <input style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block" type="submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>                
+    <script>
+        (function() {
+            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+            if (!String.prototype.trim) {
+                (function() {
+                    // Make sure we trim BOM and NBSP
+                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                    String.prototype.trim = function() {
+                        return this.replace(rtrim, '');
+                    };
+                })();
+            }
+
+            [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+                // in case the input is already filled..
+                if( inputEl.value.trim() !== '' ) {
+                    classie.add( inputEl.parentNode, 'input--filled' );
+                }
+
+                // events:
+                inputEl.addEventListener( 'focus', onInputFocus );
+                inputEl.addEventListener( 'blur', onInputBlur );
+            } );
+
+            function onInputFocus( ev ) {
+                classie.add( ev.target.parentNode, 'input--filled' );
+            }
+
+            function onInputBlur( ev ) {
+                if( ev.target.value.trim() === '' ) {
+                    classie.remove( ev.target.parentNode, 'input--filled' );
+                }
+            }
+        })();
+    </script>
+    <script  src="../js/check.js"></script>
     <footer class="myfooter">
         <div class="container-fluid">
             <div class="row">
