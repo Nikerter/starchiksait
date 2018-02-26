@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Дополнительные услуги StarLineTelecom</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -10,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="../css/card.css" />
     <link rel="stylesheet" type="text/css" href="../css/pattern.css" />
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<!--    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.js"></script>
@@ -21,14 +24,23 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script>
-        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-            var root = document.getElementsByTagName('html')[0];
-            root.setAttribute('class', 'ff');
-        };
-    </script>
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		var root = document.getElementsByTagName('html')[0];
+		root.setAttribute('class', 'ff');
+	};
+	</script>
 </head>
+<style>
+    
+    
+    @media(max-width: 400px) {
+        .navbar-brand {
+            font-size: 31px;
+        }
+}    
+</style>
 <body class="demo-3">
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation" style="z-index: 10; position: fixed; width: 100%;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -41,7 +53,7 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navflo">
             <li><a href="../index.html">Главная</a></li>
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Интернет <b class="caret"></b></a>
@@ -77,15 +89,20 @@
                                     <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
                                 </clipPath>
                             </defs>
-                            <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="../images/m.jpg"></image>
+                            <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="../images/a.jpg" ></image>
                         </svg>
                         <div class="card__content">
-                            <i class="card__btn-close fa fa-times"></i>
-                            <div class="card__caption">
-                                <h2 class="card__title">Tristan and Isolde</h2>
-                                <p class="card__subtitle">A modern day love story</p>
-                            </div>
-                            <div class="card__copy">
+                            <i class="card__btn-close fa fa-times" data-cshid="37eb5867-2933-a492-fe5e-3a18d8a9780f"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Tristan and Isolde</h2>
+								<p class="card__subtitle">A modern day love story</p>
+							</div>
+							<div class="card__copy">
+                               <div class="meta">
+									<img class="meta__avatar" src="img/authors/1.png" alt="author01" />
+									<span class="meta__author">Gerry Sutherland</span>
+									<span class="meta__date">06/19/2015</span>
+								</div>
                                 <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
                                 <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
                                 <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
@@ -282,7 +299,7 @@
     <script src="../js/demo-3.js"></script>
 </body>
 <!--   Footer   -->
-<footer class="myfooter">
+<footer class="myfooter" style="z-index: -1; position: absolute">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3">
