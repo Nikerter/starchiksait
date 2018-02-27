@@ -69,11 +69,11 @@
 
         .sltbg{
             background: rgb(5, 165, 167);
-background: -moz-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: -webkit-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: -o-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: -ms-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
-background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%); 
+            background: -moz-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+            background: -webkit-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+            background: -o-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+            background: -ms-linear-gradient(30deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%);
+            background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%); 
             border: 0px solid #30BAA8;
         }        
         
@@ -199,7 +199,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
             }
         }
 
-        
+        .jeu{
+            font-size: 12px;
+            margin-top: 22px;
+            font-family: 'Play', sans-serif;
+        }
     </style>
 
     <div class="row" style="background:#1B1A1C; padding-top: 10%; padding-bottom: 10%">
@@ -211,8 +215,10 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
                         300 Руб./Месяц
+<!--
                         <br>
                         Цена фиксированная
+-->
                     </p>
                     <br>
                     <hr>
@@ -225,12 +231,15 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">70</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        Первые 3 Месяца 250 Руб./Месяц
+                        250 Руб./Месяц
+<!--
                         <br>
                         Далее
                         <br>
                         400 Руб./Месяц
+-->
                     </p>
+                    <br>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#400tar">Подключить</button></p>
                   </div>
@@ -241,12 +250,9 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">100</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        Первые 3 Месяца 300 Руб./Месяц
-                        <br>
-                        Далее
-                        <br>
-                        450 Руб./Месяц
+                    300 Руб./Месяц
                     </p>
+                    <br>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#450tar">Подключить</button></p>
                   </div>
@@ -257,12 +263,9 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">150</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        Первые 3 Месяца 400 Руб./Месяц
-                        <br>
-                        Далее
-                        <br>
-                        550 Руб./Месяц
+                        400 Руб./Месяц
                     </p>
+                    <br>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#550tar">Подключить</button></p>
                   </div>
@@ -273,12 +276,9 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
                   <h1 class="navbar-brand text-center" style="float: none"><p class="mbs">200</p><p class="mbscap" style="margin-top: 70px;" >Мбит/с</p></h1>
                   <div class="caption" style="margin-top: 110px">
                     <p class="text-center oplata">
-                        Первые 3 Месяца 500 Руб./Месяц
-                        <br>
-                        Далее 
-                        <br>
-                        650 Руб./Месяц
+                        500 Руб./Месяц
                     </p>
+                    <br>
                     <hr>
                     <p><button style="background: #30BAA8; border: 0px solid #30BAA8;" class="btn btn-primary btn-lg center-block btn-res" data-toggle="modal" data-target="#650tar">Подключить</button></p>
                   </div>
@@ -299,10 +299,13 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
           <div class="modal-body">    
             <div class="row text-center">
               <div class="col-md-12">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">30</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none">
+                      <p style="font-size: 100px">30</p>
+                      <p style="font-size: 60px; margin-top: 70px;">Мбит/с</p>
+<!--                      <p class="jeu">Первые 3 Месяца 500 Руб./Месяц Далее 650 Руб./Месяц</p>-->
+                  </h1>
               </div>                                     
-            </div>                             
-
+            </div>
             <form action="../scripts/tariff.php" method="post">
               <div class="row" style="margin-top: 75px;">
                 <hr>
@@ -402,7 +405,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
           <div class="modal-body">    
             <div class="row text-center">
               <div class="col-md-12">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">70</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none">
+                      <p style="font-size: 100px">70</p>
+                      <p style="font-size: 60px; margin-top: 70px;">Мбит/с</p>
+                      <p class="jeu">ТУТ МЕЛКИЙ ТЕКСТ</p>
+                  </h1>
               </div>                                     
             </div>                             
 
@@ -505,7 +512,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
           <div class="modal-body">    
             <div class="row text-center">
               <div class="col-md-12">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">100</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none">
+                      <p style="font-size: 100px">100</p>
+                      <p style="font-size: 60px; margin-top: 70px;">Мбит/с</p>
+                      <p class="jeu">ТУТ МЕЛКИЙ ТЕКСТ</p>
+                  </h1>
               </div>                                     
             </div>                             
 
@@ -608,7 +619,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
           <div class="modal-body">    
             <div class="row text-center">
               <div class="col-md-12">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">150</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none">
+                      <p style="font-size: 100px">150</p>
+                      <p style="font-size: 60px; margin-top: 70px;">Мбит/с</p>
+                      <p class="jeu">ТУТ МЕЛКИЙ ТЕКСТ</p>
+                  </h1>
               </div>                                     
             </div>                             
 
@@ -711,7 +726,11 @@ background: linear-gradient(120deg, rgb(5, 165, 167) 30%, rgb(48, 186, 168) 70%)
           <div class="modal-body">    
             <div class="row text-center">
               <div class="col-md-12">
-                  <h1 class="navbar-brand text-center" style="float: none"><p style="font-size: 100px">200</p><p style="font-size: 60px; margin-top: 70px;">Мбит/с</p></h1>
+                  <h1 class="navbar-brand text-center" style="float: none">
+                      <p style="font-size: 100px">200</p>
+                      <p style="font-size: 60px; margin-top: 70px;">Мбит/с</p>
+                      <p class="jeu">ТУТ МЕЛКИЙ ТЕКСТ</p>
+                  </h1>
               </div>                                     
             </div>                             
 

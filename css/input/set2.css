@@ -924,7 +924,8 @@
 	width: 100%;
 	background: transparent;
 	padding: 0.5em 0;
-	margin-bottom: 2em;
+    font-size: 22px;
+/*	margin-bottom: 2em;*/
 	color: #fff;
 }
 
