@@ -5,13 +5,15 @@
 	<title>Подтверждение подключения</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 </head>
-<body>
+<body style="background: #1B1A1C; color: azure">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -21,12 +23,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">StarLineTelecom</a>
+        <a class="navbar-brand" href="../main.html">StarLineTelecom</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../main.html">Главная</a></li>
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Интернет <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -243,6 +245,41 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
 
 
 ?>
-
 </body>
+<!--   Footer   -->
+<footer class="myfooter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="title-widget">Телевидение</h4>
+                <h4 class="title-widget">Бизнес</h4>
+                <h4 class="title-widget">Контакты</h4>
+                <h4 class="title-widget">Личный кабинет</h4>
+            </div>
+            <div class="col-md-5">
+                <div class="row text-center">ООО НПО ЭДМА. Данный интернет-сайт носит исключительно информативный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ. Для получения подробной информации об акциях, тарифах, условиях их изменения и подключения, обращайтесь в офис компании. Лицензия №96535, №102373, №102374. Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций(Роскомнадзор).</div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4 class="title" style="margin-top: 0px;">Способы оплаты</h4>
+                <p>Оплатить услуги Вы можете воспользовавшись следующими сервисами:</p>
+                <ul class="payment" STYLE="padding-left: 25px" >
+                    <li><a href="https://money.yandex.ru/new"><img src="../images/icons/yandex.png" alt=""></a></li>
+                    <li><a href="https://plat.ru/?#show_pay(10185, 102)"><img src="../images/icons/plat.png" alt=""></a></li>
+                    <li><a href="https://online.sberbank.ru/CSAFront/index.do"><img src="../images/icons/sber.png" alt=""></a></li>
+                    <li><a href="https://b.butovonet.ru/webroom/?"><img src="../images/icons/card.png" alt=""></a></li>
+                    <li><a href="http://butovonet.ru/blank.html"><img src="../images/icons/bank.png" alt=""></a></li>
+                    <!--
+                                        <li><a href="#"><i class="fa fa-credit-card zoom" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-stripe-s zoom" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-ruble-sign zoom" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-cuttlefish zoom" aria-hidden="true"></i></a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center"> Copyright © 2017 StarLineTelecom</div>
+        <div class="row text-center"> Powered by Hohol</div>
+    </div> <!-- ./container -->
+</footer>
 </html>
