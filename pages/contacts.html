@@ -58,18 +58,18 @@
     <div class="container" style="background-color: #2e2b2b; ">
         <div class="row">
             <div class="col-md-6" style="box-shadow: 3px 0 0 0 azure">
-                <form action="#" method="post"  onsubmit="checkform()" id="contactform" style="padding-bottom: 20px;" class="text-center">
+                <form action="../scripts/contact.php" method="post"  onsubmit="checkform()" id="contactform" style="padding-bottom: 20px;" class="text-center">
                     <h2 style="text-align: center; font-family: 'Play', sans-serif">
                         Вы можете оставить свои данные и мы свяжемся с вами сами!
                     </h2>
                     <h3 >ФИО*</h3>
-                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="label" name="label" placeholder="Иванов Иван Иванович" >
+                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="label" name="label" placeholder="Иванов Иван Иванович" required>
                     <h3 >Адрес*</h3>
-                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="adres" name="adres" placeholder="Примерная 17 кв.165" >
+                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="adres" name="adres" placeholder="Примерная 17 кв.165"  required>
                     <h3 >Телефон*</h3>
-                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="tel" name="tel" placeholder="+7 985 125 47 96">
+                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="tel" name="tel" placeholder="+7 985 125 47 96"  required>
                     <h3 >Эл. почта</h3>
-                    <input type="text" class="form-control center-block" style="width: 70%; font-size: 20px;" id="mail" name="mail" placeholder="example@mail.ru">
+                    <input type="email" class="form-control center-block" style="width: 70%; font-size: 20px;" id="mail" name="mail" placeholder="example@mail.ru">
                     <input type="submit" value="Отправить" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 70%;" id="submitbutton">
                     <h2 class="text-center" style="padding: 5%; background: red; display: none;" id="caution">ochko</h2>
                 </form>

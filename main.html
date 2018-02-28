@@ -101,14 +101,26 @@
                     </div>
                 </div>
         </div>
-        
     </div>
 </div>      
   
 <div class="container-fluid" style="background-image: url(images/main1.jpg); background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-color: #464646; height: 700px;">
+<!--
+    <div class="row">
+       <div class="col-md-1"></div>
+        <div class="col-md-10" style="padding-left: 0px; padding-right: 0px;">
+                <div id="example-25" class="ma5slider hover-navs hover-dots anim-horizontal center-dots inside-navs inside-dots loop-mode autoplay" data-tempo="3500" style="margin-bottom: 0px;">
+                    <div class="slides">
+                        <a href="#slide-1" data-ma5-anim="anim-fade"><img src="images/Slider/Begin.jpg" alt=""></a>
+                        <a href="#slide-10" data-ma5-anim="anim-fade"><img src="images/Biznes-sdelka.jpg" alt=""></a>
+                        <a href="#slide-2" data-ma5-anim="anim-fade"><img src="images/Contact.jpg" alt=""></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+-->
    <div class="row">
        <div class="col-md-2">
-           sadsad
        </div>
        <div class="col-md-8 text-center" style="padding-left: 0px; padding-right: 0px;">
            <div style="background: black; opacity: 0.8; color: azure; margin-top: 30px;">
@@ -123,29 +135,29 @@
                 <div class="card-body">
                     <!-- Form register -->
                     <h2 class="text-center">Подключиться в пару кликов!</h2>
-                    <form style="padding: 10px;">
+                    <form style="padding: 10px;" action="../scripts/main.php" method="post">
                         <div class="md-form" style="padding-bottom: 10px;">
                             <i class="fa fa-user prefix white-text" style="margin-left: 12.5%"></i>
-                            <input type="text" id="orangeForm-name1" class="form-control center-block" style="width: 75%">
+                            <input type="text" id="orangeForm-name1" name="label" class="form-control center-block" style="width: 75%; font-size: 22px;" required placeholder="Иванов Иван Иванович">
                             <label for="orangeForm-name2" style="margin-left: 12.5%">ФИО:</label>
                         </div>
                         <div class="md-form" style="padding-bottom: 10px;">
                             <i class="fas fa-phone" style="margin-left: 12.5%"></i>
-                            <input type="text" id="orangeForm-name3" class="form-control center-block" style="width: 75%">
+                            <input type="text" id="orangeForm-name3" name="tel" class="form-control center-block" style="width: 75%; font-size: 22px;" required placeholder="+7 985 149 55 99">
                             <label for="orangeForm-name2" style="margin-left: 12.5%">Телефон:</label>
                         </div>
                         <div class="md-form" style="padding-bottom: 10px;">
                             <i class="fas fa-map-marker" style="margin-left: 12.5%"></i>
-                            <input type="text" id="orangeForm-email2" class="form-control center-block" style="width: 75%">
+                            <input type="text" id="orangeForm-email2" name="adres" class="form-control center-block" style="width: 75%; font-size: 22px;" required placeholder="Примерная улица 148 к4">
                             <label for="orangeForm-email2" style="margin-left: 12.5%">Адрес:</label>
                         </div>
                         <div class="md-form" style="padding-bottom: 20px;">
                             <i class="fas fa-at" style="margin-left: 12.5%"></i>
-                            <input type="text" id="orangeForm-pass2" class="form-control center-block" style="width: 75%">
+                            <input type="email" id="orangeForm-pass2" name="mail" class="form-control center-block" style="width: 75%; font-size: 22px;" placeholder="example@mail.ru">
                             <label for="orangeForm-pass2" style="margin-left: 12.5%">Эл. почта:</label>
                         </div>
                         <div class="text-center" >
-                            <button class="btn btn-lg" style="width: 75%; background: linear-gradient(to top left,#00baac, #00675C);" >Отправить</button>
+                            <input type="submit" value="Отправить" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 75%;" id="submitbutton">
                         </div>
                     </form>
                     <!-- Form register -->

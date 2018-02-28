@@ -68,7 +68,8 @@
     Очко
     </button>
 -->
-<div class="container-fluid"  style="background: url(../images/biznes-sdelka2.jpg); color: #dff0d8; background-size: cover; height: px">          <h3 style="text-align: center; font-family: 'Play', sans-serif;color: #d9edf7">ИНТЕРНЕТ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ И ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ</h3>
+<div class="container-fluid"  style="background: url(../images/biznes-sdelka2.jpg); color: #dff0d8; background-size: cover; height: px">
+          <h3 style="text-align: center; font-family: 'Play', sans-serif;color: #d9edf7">ИНТЕРНЕТ ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ И ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ</h3>
            <p style="text-align: center;font-size: 20px; font-family: 'Lora', serif;color: #d9edf7">
         Срочные подключения к Интернет нежилых помещений по договорным условиям с гибкими тарифными планами по безналичным расчетам.
            </p>
@@ -110,85 +111,20 @@
         </div>-->
     </div>
         <div class="col-md-10">
-            <form action="#" method="post" class="center-block" style="background: black; opacity: 0.7; width: 50%; padding-bottom: 5%; padding-top: 2%; margin-top: 2%" onsubmit="checkform()" id="contactform">
+            <form action="../scripts/business.php" method="post" class="center-block" style="background: black; opacity: 0.7; width: 50%; padding-bottom: 5%; padding-top: 2%; margin-top: 2%" onsubmit="checkform()" id="contactform">
                 <h2 class="text-center" >
                     Оставьте заявку на подключение
                 </h2>
-<!--
-                <div class="row" style="margin-left: 10%">
-                    <h3 >Тип организации/Название организации*</h3>
-                    <div class="col-md-3" style="margin-left: -1%">
-                        <input type="text" class="form-control center-block text-center" style="width: 95%;" id="label" name="label" placeholder="ООО" >
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control center-block" style="width: 95%;" id="label" name="label" placeholder="Девайс" >
-                    </div>
-                </div>
--->
-                <h3 style="margin-left: 15%">Названние организации</h3>
-                <input type="text" class="form-control center-block" style="width: 70%;" id="label" name="label" placeholder="ОАО Пример" >
-                
+                <h3 style="margin-left: 15%">Названние организации*</h3>
+                <input type="text" class="form-control center-block" style="width: 70%; font-size: 22px;" id="label" name="label" placeholder="ОАО Пример" required>
                 <h3 style="margin-left: 15%">Физический адрес*</h3>
-                <input type="text" class="form-control center-block" style="width: 70%;" id="adres" name="adres" placeholder="Примерная 17 кв.165" >
+                <input type="text" class="form-control center-block" style="width: 70%; font-size: 22px;" id="adres" name="adres" placeholder="Примерная 17 кв.165" required>
                 <h3 style="margin-left: 15%">Номер телефона*</h3>
-                <input type="text" class="form-control center-block" style="width: 70%;" id="tel" name="tel" placeholder="+7 985 125 47 96">
+                <input type="text" class="form-control center-block" style="width: 70%; font-size: 22px;" id="tel" name="tel" placeholder="+7 985 125 47 96" required>
                 <h3 style="margin-left: 15%">Эл. почта</h3>
-                <input type="text" class="form-control center-block" style="width: 70%;" id="mail" name="mail" placeholder="example@mail.ru">
+                <input type="email" class="form-control center-block" style="width: 70%; font-size: 22px;" id="mail" name="mail" placeholder="example@mail.ru">
                 <input type="submit" value="Отправить" class="center-block btn-lg btn-primary" style="background: linear-gradient(to top left,#00baac, #00675C); margin-top: 5%; width: 70%;" id="submitbutton">
-                <h2 class="text-center" style="padding: 5%; background: red; display: none;" id="caution">ochko</h2>
             </form>
-            
-            <script>
-                function checkform() {
-                    
-                    var label = document.getElementById('label').value;
-                    var adres = document.getElementById('adres').value;
-                    var tel = document.getElementById('tel').value;
-                    var mail = document.getElementById('mail').value;
-                    
-                    if (!label || !adres || !tel){
-                        alert("Ты кого наебать вздумал?");
-                    
-                    } else {
-                        alert("Проходите ебать");
-                        if (!mail){
-                            alert("Вы не ввели мэйл, но это не критично");
-                        } else {    
-                            var checkmail = mail.match(/^[A-Za-z0-9][A-Za-z0-9\._-]*[A-Za-z0-9_]*@([A-Za-z0-9]+([A-Za-z0-9-]*[A-Za-z0-9]+)*\.)+[A-Za-z]+$/);
-                            
-                            if (!checkmail) {
-                                alert("Мэйл введен некорректно");
-                            } else {
-                                alert("мєйл корректный");
-                            };
-                        }
-                    }
-                }
-                
-            </script>
-            
-<!--
-               <form action="#" style="background: black; opacity: 0.7;">
-                <p style="text-align: center;font-size: 15px; font-family: 'Lora', serif;">Для подбора условий по подключению к интернет, заполните форму и в ближайшее время с Вами свяжется оператор с индивидуальным предложением!</p>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Название организации:</label>
-                <input name="label" type="text" class="form-control" id="label" placeholder="ООО Девайс" required>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Адрес*</label>
-                <input name="adres" type="text" class="form-control" id="adres" placeholder="Примерная 17 кв.165" required>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Эл. почта</label>
-                <input name="mail" type="email" class="form-control" id="email" placeholder="mail@mail.mail">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Номер телефона</label>
-                <input name="tel" type="tel" class="form-control" id="tel" placeholder="+7 888 555 75 38">
-            </div>
-               </form>
--->
         </div>
     </div>
     <h2 style="text-align: center; font-family: 'Play', sans-serif;">
@@ -199,7 +135,7 @@
             <img src="../images/buisness/b1.jpg" alt="Организация сети внутри офиcных помещений"/>
             <figcaption>
                 <h4 style="text-align: center">Организация сети внутри офиcных помещений</h4>
-                <p>Заебашим лучшую сеть из всех сетей, которые можно найти</p>
+                <p>Устроим лучшую сеть</p>
             </figcaption>
         </figure>
         <figure class="effect-dexter">
