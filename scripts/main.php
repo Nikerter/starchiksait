@@ -5,7 +5,7 @@
 	<title>Document</title>
    <link rel="stylesheet" href="../css/bootstrap.css">
    <script language="JavaScript" type="text/javascript">
-   function changeurl(){eval(self.location="../pages/business.html");}
+   function changeurl(){eval(self.location="../main.html");}
    window.setTimeout("changeurl();",3000);
    </script>
 </head>
@@ -21,8 +21,8 @@
       $tel = trim(strip_tags($_POST['tel']));
       $mail = trim(strip_tags($_POST['mail']));
  
-      mail('butovonet@mail.ru', 'Заявка на подключение от юридического лица', 
-      'Название фирмы: '.$label.' 
+      mail('butovonet@mail.ru', 'Заявка от пользователя с главной', 
+      'ФИО: '.$label.' 
       Адрес: '.$adres.' 
       Телефон: '.$tel.' 
       Почта: '.$mail,"Content-type:text/html;charset=utf-8");
@@ -36,6 +36,7 @@
    else {
       echo "<h1 style='color: azure; margin-top: 300px;'>Для отправки сообщения заполните все поля!</h1>";
       echo "<h2 style='color: azure;'>Сейчас откроется предудщая страница!</h2>";
+      //echo "<h2 style='color:>Сейчас откроется предудщая страница!</h2>";
       exit;
    }
 ?>
@@ -43,4 +44,3 @@
    </div>
 </body>
 </html>
-
