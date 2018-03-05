@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/formobr.css">
 <!--<link rel="stylesheet" href="../css/input/demo.css">-->
     <link rel="stylesheet" href="../css/input/normalize.css">
 <!--    <link rel="stylesheet" href="../css/input/set1.css">-->
@@ -23,7 +25,6 @@
     <link rel="stylesheet" href="../css/checkbox/style.css">
 </head>
 <body>
-   
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -56,7 +57,7 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
       <hr style="margin-top: 0px; margin-bottom: 0px">
-      <h3 style="float: right; margin-right: 3%; color: azure; margin-top: 0px; margin-bottom: 5px;">+8 (495) 716-98-18</h3>
+      <h3 style="float: right; margin-right: 3%; color: azure; margin-top: 8px; margin-bottom: 5px;">+7 (495) 716-98-18</h3>
     </nav>
     
     <style>
@@ -284,8 +285,6 @@
         <div class="col-md-1"></div>
     </div>
     
-    <!-- Модальні вікна -->
-        
     <div class="modal fade" id="300tar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content" style="background: #1B1A1C; color: azure">
@@ -819,24 +818,18 @@
     </div>                
     <script>
         (function() {
-            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
             if (!String.prototype.trim) {
                 (function() {
-                    // Make sure we trim BOM and NBSP
                     var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
                     String.prototype.trim = function() {
                         return this.replace(rtrim, '');
                     };
                 })();
             }
-
             [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-                // in case the input is already filled..
                 if( inputEl.value.trim() !== '' ) {
                     classie.add( inputEl.parentNode, 'input--filled' );
                 }
-
-                // events:
                 inputEl.addEventListener( 'focus', onInputFocus );
                 inputEl.addEventListener( 'blur', onInputBlur );
             } );
@@ -853,6 +846,36 @@
         })();
     </script>
     <script  src="../js/check.js"></script>
+    <div id="overlay">
+            <div class="popup">
+                <section>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Оставьте номер телефона и мы ответим на все ваши вопросы!</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form action="../scripts/tariffmodal.php" method="post">
+                                <fieldset style=" border: 0px solid #c0c0c0;">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="+7 888 555 44 33" name="tel" type="tel">
+                                    </div>
+                                    <input class="btn btn-lg btn-success btn-block" style="background: #00796B" type="submit" value="Подтвердить">
+                                </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    <button class="close"  title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"><span class="glyphicon glyphicon-remove" style="margin-right: 0px;"></span></button>
+                </section>
+            </div>
+        <script src="http://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
+        <script src="http://yastatic.net/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            var delay_popup = 30000;
+            setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+        });
+        </script>
+    </div>
     <footer class="myfooter">
         <div class="container-fluid">
             <div class="row">
@@ -874,19 +897,13 @@
                         <li><a href="#"><img src="../images/icons/sber.png" alt=""></a></li>
                         <li><a href="#"><img src="../images/icons/card.png" alt=""></a></li>
                         <li><a href="#"><img src="../images/icons/bank.png" alt=""></a></li>
-                        <!--
-                                            <li><a href="#"><i class="fa fa-credit-card zoom" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-stripe-s zoom" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-ruble-sign zoom" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-cuttlefish zoom" aria-hidden="true"></i></a></li>
-                        -->
                     </ul>
                 </div>
             </div>
             <hr>
             <div class="row text-center"> Copyright © 2017 StarLineTelecom</div>
             <div class="row text-center"> Powered by Hohol</div>
-        </div> <!-- ./container -->
+        </div>
     </footer>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 </head>
-<body>
+<body style="background: #1B1A1C; color: azure;">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -21,35 +21,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">StarLineTelecom</a>
+        <a class="navbar-brand" href="../main.html">StarLineTelecom</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Главная</a></li>
-            <li class="dropdown active">
+            <li><a href="../main.html">Главная</a></li>
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Интернет <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="../pages/tariff.html">Подбор тарифного плана</a></li>
+              <ul class="dropdown-menu navbar-inverse navbar-nav">
+                <li><a href="../pages/tariff.html">Подбор тарифного плана</a></li>
                 <li class="divider"></li>
-                <li><a href="../pages/services.html">Дополнительные услуги</a></li>
+                <li><a href="../pages/services.html">Дополнительные услуги </a></li>
               </ul>
             </li>
-            <li><a href="../pages/tv.html">Телевидение</a></li>
+            <li class="active"><a href="tv.html">Телевидение</a></li>
             <li><a href="../pages/business.html">Бизнес</a></li>
             <li><a href="../pages/payment.html">Оплата</a></li>
             <li><a href="../pages/contacts.html">Контакты</a></li>
             <li><a href="https://b.butovonet.ru/webroom/" target="_blank">Личный кабинет</a></li>
           </ul>       
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
+      <hr style="margin-top: 0px; margin-bottom: 0px">
+      <h3 style="float: right; margin-right: 3%; color: azure; margin-top: 8px; margin-bottom: 5px;">+7 (495) 716-98-18</h3>
     </nav>
     
     
     
 <?php 
-//var_dump($_POST);
-
     switch ($_POST['tvcost']) {
     case '99':
       $hc = 0;
@@ -79,8 +79,7 @@
       $hc = 1;
       break;
   }
-
-
+    
 if ($_POST['mail'] == "") {
   $mail = "Почта не указана";
 } else {
@@ -96,7 +95,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tvcost'
       <input hidden='hidden' type='text' name='adres' id='adres' value='{$_POST['adres']}'>
       <h3>Ваша эл. почта: <strong>{$mail}</strong></h3>
       <input hidden='hidden' type='text' name='mail' id='mail' value='{$_POST['mail']}'>
-      <hr>
       <h3>Пакет: <strong>{$tvname}</strong></h3>
       <h3>Стоимость: <strong>{$tvecho}</strong></h3>
       <input hidden='hidden' type='text' name='tvname' id='tvname' value='{$tvname}'>
@@ -104,7 +102,7 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tvcost'
       <input hidden='hidden' type='text' name='tvcost' id='tvcost' value='{$_POST['tvcost']}'>";
   echo "</strong></h3>
     </div>
-    <hr>";
+    ";
 
   echo "<div class='row'>
         <h2 class='text-center'>Сумма заявки: <strong>", $_POST['tvcost'] , "</strong> рублей</h2>'
@@ -116,7 +114,7 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tvcost'
       </div>
       <div class='col-md-2'>
         <a href='../pages/tv.html'>
-          <input class='btn btn-lg btn-danger center-block' value='Вернуться'>
+          <input class='btn btn-lg btn-danger center-block' value='Вернуться' style='width: 148px';>
         </a>
       </div>
     </div>";

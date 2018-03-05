@@ -22,18 +22,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">StarLineTelecom</a>
+        <a class="navbar-brand" href="../main.html">StarLineTelecom</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../main.html">Главная</a></li>
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Интернет <b class="caret"></b></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu navbar-inverse navbar-nav">
                 <li class="active"><a href="../pages/tariff.html">Подбор тарифного плана</a></li>
                 <li class="divider"></li>
-                <li><a href="../pages/services.html">Дополнительные услуги</a></li>
+                <li><a href="../pages/services.html">Дополнительные услуги </a></li>
               </ul>
             </li>
             <li><a href="../pages/tv.html">Телевидение</a></li>
@@ -44,17 +44,14 @@
           </ul>       
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
-    
-    
-
+      <hr style="margin-top: 0px; margin-bottom: 0px">
+      <h3 style="float: right; margin-right: 3%; color: azure; margin-top: 8px; margin-bottom: 5px;">+7 (495) 716-98-18</h3>
+    </nav>    
      <br>
      <br>
+     
 <?php 
-
-//function cas($tariffcost)
-//{
-    switch ($_POST['tariffcost']/*$tariffcost*/) {
+    switch ($_POST['tariffcost']) {
     case '300':
       $hc = 0;
       $tariffcost = 300;
@@ -65,7 +62,6 @@
 
     case '400':
       $hc = 0;
-      //$tariff = 400;
       $tariffcost = 250;
       $tariffname = '70 Мбит/с';
       $tariffecho = "Первые 3 месяца 250 рублей/месяц <br> Далее 400 рублей/месяц";
@@ -74,7 +70,6 @@
 
     case '450':
       $hc = 0;
-      //$tariff = 450;
       $tariffcost = 300;
       $tariffname = '100 Мбит/с';
       $tariffecho = "Первые 3 месяца 300 рублей/месяц <br> Далее 450 рублей/месяц";
@@ -83,7 +78,6 @@
 
     case '550':
       $hc = 0;
-      //$tariff = 550;
       $tariffcost = 400;
       $tariffname = '150 Мбит/с';
       $tariffecho = "Первые 3 месяца 400 рублей/месяц <br> Далее 550 рублей/месяц";
@@ -92,7 +86,6 @@
 
     case '650':
       $hc = 0;
-      //$tariff = 650;
       $tariffcost = 500;
       $tariffname = '200 Мбит/с';
       $tariffecho = "Первые 3 месяца 500 рублей/месяц <br> Далее 650 рублей/месяц";
@@ -158,15 +151,9 @@ function cost ($tariffcost, $sumusl) {
 
 if ($_POST['mail'] == "") {
   $mail = "Почта не указана";
-  //echo "<br> Почта не вписана";
 } else {
   $mail = $_POST['mail'];
-  //echo "<br> Почта - {$_POST['mail']}";
 };
-
-// foreach ($usarr as $value) {
-//   echo "<br>Услуги подключены: {$value}";
-// }
 
 if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffcost'])) && ($hc == 0)) {
     echo "<form action='confirm.php' method='post'>";
@@ -190,7 +177,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
   if (($ust1 !== 1) && ($ust2 !== 1) && ($ust3 !== 1)) {
     echo "Дополнительные услуги не выбраны";
   } else {
-
             if ($_POST['usluga1'] == "on") {
              echo "<br>", $_POST['usluganame1'], " - ", $_POST['uslugcost1'], " рублей";
              echo "<input hidden='hidden' type='text' name='usluganame1' id='usluganame1' value='{$_POST["usluganame1"]}'>";
@@ -213,30 +199,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
              //echo "<input hidden='hidden' type='text' name='usttrigger3' id='usttrigger3' value='3'>";
              echo "<input hidden='hidden' checked  type='checkbox' name='usluga3'>";
             }
-         //  foreach ($usarr as  $value) {
-         //    //++$key;
-         //    echo " - ", $value;
-
-         //    //echo "<input  type='text' name='usluga{$key}' id='usluga{$key}' value='{$value}'>";
-         //    // echo "<pre>";
-         //    // echo print_r($usarr2);
-         //    // echo "</pre>";
-         //    //echo "<input type='text' name='{$value}' id='{$value}' value='{$value}'>";
-         // }
-            // if ($_POST['usluga1'] == "on") {
-            //  echo "<input hidden='hidden' type='text' name='usluga1' id='usluga1' value='{$_POST['usluganame1']}'>";
-            // }
-
-            // if ($_POST['usluga2'] == "on") {
-            //  echo "<input hidden='hidden' type='text' name='usluga2' id='usluga2' value='{$_POST['usluganame2']}'>";
-            // }
-
-            // if ($_POST['usluga3'] == "on") {
-            //  echo "<input hidden='hidden' type='text' name='usluga3' id='usluga3' value='{$_POST['usluganame3']}'>";
-            // }
-       // echo "<pre>";
-       // echo print_r($usarr);
-       // echo "</pre>";
     }
   echo "</strong></h3>
     </div>
@@ -271,10 +233,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
     </div>        
 </div>";
 }
-
-
-
-
 ?>
      <br>
      <br>
@@ -282,7 +240,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
      <br>
 
 </body>
-<!--   Footer   -->
 <footer class="myfooter">
     <div class="container-fluid">
         <div class="row">
@@ -304,18 +261,12 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
                     <li><a href="https://online.sberbank.ru/CSAFront/index.do"><img src="../images/icons/sber.png" alt=""></a></li>
                     <li><a href="https://b.butovonet.ru/webroom/?"><img src="../images/icons/card.png" alt=""></a></li>
                     <li><a href="http://butovonet.ru/blank.html"><img src="../images/icons/bank.png" alt=""></a></li>
-                    <!--
-                                        <li><a href="#"><i class="fa fa-credit-card zoom" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-stripe-s zoom" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-ruble-sign zoom" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-cuttlefish zoom" aria-hidden="true"></i></a></li>
-                    -->
                 </ul>
             </div>
         </div>
         <hr>
         <div class="row text-center"> Copyright © 2017 StarLineTelecom</div>
         <div class="row text-center"> Powered by Hohol</div>
-    </div> <!-- ./container -->
+    </div>
 </footer>
 </html>

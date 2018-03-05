@@ -25,7 +25,6 @@
           </button>
         <a class="navbar-brand" href="../main.html">StarLineTelecom</a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="../main.html">Главная</a></li>
@@ -46,20 +45,11 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
-<?php
-
-//echo $_POST['tel'], "<br>",$_POST['adres'];
-
-//var_dump($_POST);
-
-?>
-
+    
 <?php 
 
-//function cas($tariffcost)
-//{
-    switch ($_POST['tarifftype']/*$tariffcost*/) {
+
+    switch ($_POST['tarifftype']) {
     case '300':
       $hc = 0;
       $tariffcost = 300;
@@ -69,7 +59,6 @@
 
     case '400':
       $hc = 0;
-      //$tariff = 400;
       $tariffcost = 250;
       $tariffname = '70 Мбит/с';
       $tariffecho = "Первые 3 месяца 250 рублей/месяц  Далее 400 рублей/месяц";
@@ -77,7 +66,6 @@
 
     case '450':
       $hc = 0;
-      //$tariff = 450;
       $tariffcost = 300;
       $tariffname = '100 Мбит/с';
       $tariffecho = "Первые 3 месяца 300 рублей/месяц  Далее 450 рублей/месяц";
@@ -85,7 +73,6 @@
 
     case '550':
       $hc = 0;
-      //$tariff = 550;
       $tariffcost = 400;
       $tariffname = '150 Мбит/с';
       $tariffecho = "Первые 3 месяца 400 рублей/месяц  Далее 550 рублей/месяц";
@@ -93,7 +80,6 @@
 
     case '650':
       $hc = 0;
-      //$tariff = 650;
       $tariffcost = 500;
       $tariffname = '200 Мбит/с';
       $tariffecho = "Первые 3 месяца 500 рублей/месяц Далее 650 рублей/месяц";
@@ -103,9 +89,6 @@
       $hc = 1;
       break;
   }
-
-//return $hc;
-//}
 
 if ($_POST['usluga1'] == "on") {
   $uslugcost1 = $_POST['uslugcost1'];
@@ -136,34 +119,12 @@ function cost ($tariffcost, $sumusl) {
   echo $tariffcost + $sumusl;
 }
 
-
-//var_dump($_POST);
-
-// echo $_POST['usluganame1'];
-// echo $_POST['usluganame2'];
-// echo $_POST['usluganame3'];
-
-//cas($_POST['tariffcost']);
-
-//$tariffcost = $_POST['tariffcost'];
-
-
-//$mail = $_POST['mail'];
-
-
-
-
 if ($_POST['mail'] == "") {
   $mail = "Почта не указана";
-  //echo "<br> Почта не вписана";
 } else {
   $mail = $_POST['mail'];
-  //echo "<br> Почта - {$_POST['mail']}";
 };
 
-// foreach ($usarr as $value) {
-//   echo "<br>Услуги подключены: {$value}";
-// }
 
 if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffcost'])) && ($hc == 0)) {
     echo "
@@ -199,30 +160,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
              echo "<br>", $_POST['usluganame3'], " - ", $_POST['uslugcost3'], " рублей";
              echo "<input hidden='hidden' type='text' name='usluga3' id='usluga3' value='{$_POST['usluganame3']}'>";
             }
-         //  foreach ($usarr as  $value) {
-         //    //++$key;
-         //    echo " - ", $value;
-
-         //    //echo "<input  type='text' name='usluga{$key}' id='usluga{$key}' value='{$value}'>";
-         //    // echo "<pre>";
-         //    // echo print_r($usarr2);
-         //    // echo "</pre>";
-         //    //echo "<input type='text' name='{$value}' id='{$value}' value='{$value}'>";
-         // }
-            // if ($_POST['usluga1'] == "on") {
-            //  echo "<input hidden='hidden' type='text' name='usluga1' id='usluga1' value='{$_POST['usluganame1']}'>";
-            // }
-
-            // if ($_POST['usluga2'] == "on") {
-            //  echo "<input hidden='hidden' type='text' name='usluga2' id='usluga2' value='{$_POST['usluganame2']}'>";
-            // }
-
-            // if ($_POST['usluga3'] == "on") {
-            //  echo "<input hidden='hidden' type='text' name='usluga3' id='usluga3' value='{$_POST['usluganame3']}'>";
-            // }
-       // echo "<pre>";
-       // echo print_r($usarr);
-       // echo "</pre>";
     }
 
   echo "<br>Общая сумма заявки:", cost($tariffcost, $sumusl) , " рублей";
@@ -241,12 +178,8 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
 </div>";
 }
 
-
-
-
 ?>
 </body>
-<!--   Footer   -->
 <footer class="myfooter">
     <div class="container-fluid">
         <div class="row">
@@ -268,18 +201,12 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
                     <li><a href="https://online.sberbank.ru/CSAFront/index.do"><img src="../images/icons/sber.png" alt=""></a></li>
                     <li><a href="https://b.butovonet.ru/webroom/?"><img src="../images/icons/card.png" alt=""></a></li>
                     <li><a href="http://butovonet.ru/blank.html"><img src="../images/icons/bank.png" alt=""></a></li>
-                    <!--
-                                        <li><a href="#"><i class="fa fa-credit-card zoom" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-stripe-s zoom" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-ruble-sign zoom" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-cuttlefish zoom" aria-hidden="true"></i></a></li>
-                    -->
                 </ul>
             </div>
         </div>
         <hr>
         <div class="row text-center"> Copyright © 2017 StarLineTelecom</div>
         <div class="row text-center"> Powered by Hohol</div>
-    </div> <!-- ./container -->
+    </div>
 </footer>
 </html>

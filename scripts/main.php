@@ -13,8 +13,6 @@
    <div class="row">
       <div class="col-md-12 text-center">
          <?php
-   // $back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
- 
    if(!empty($_POST['label']) and !empty($_POST['adres']) and !empty($_POST['tel'])){
       $label = trim(strip_tags($_POST['label']));
       $adres = trim(strip_tags($_POST['adres']));
@@ -36,7 +34,6 @@
    else {
       echo "<h1 style='color: azure; margin-top: 300px;'>Для отправки сообщения заполните все поля!</h1>";
       echo "<h2 style='color: azure;'>Сейчас откроется предудщая страница!</h2>";
-      //echo "<h2 style='color:>Сейчас откроется предудщая страница!</h2>";
       exit;
    }
 ?>

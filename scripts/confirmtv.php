@@ -23,7 +23,6 @@
           </button>
         <a class="navbar-brand" href="#">StarLineTelecom</a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="../index.html">Главная</a></li>
@@ -44,14 +43,6 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
-<?php
-
-//echo $_POST['tel'], "<br>",$_POST['adres'];
-
-//var_dump($_POST);
-
-?>
 
 <?php 
 
@@ -126,10 +117,6 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tvcost'
     </div>        
 </div>";
 }
-
-
-
-
 ?>
 
 </body>
