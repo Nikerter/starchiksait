@@ -265,8 +265,8 @@ if ((isset($_POST['tel'])) && (isset($_POST['adres'])) && (isset($_POST['tariffc
             </div>
         </div>
         <hr>
-        <div class="row text-center"> Copyright © 2017 StarLineTelecom</div>
-        <div class="row text-center"> Powered by Hohol</div>
+        <div class="row text-center"> Copyright © 2018 StarLineTelecom</div>
+        <div class="row text-center"> Powered by <a href="https://vk.com/initium_web">Initium</a></div>
     </div>
 </footer>
 </html>
